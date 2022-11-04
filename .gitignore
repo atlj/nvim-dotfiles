@@ -3,6 +3,5 @@ colors/*
 docs
 ginit.vim
 lua/packer_compiled.lua
-lua/user
 plugin
 spell
