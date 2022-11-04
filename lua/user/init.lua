@@ -250,7 +250,7 @@ local config = {
     telescope = {
       pickers = {
         find_files = {
-          file_ignore_patterns = { "node_modules" },
+          file_ignore_patterns = { "node_modules", "Pods" },
         },
       },
     },
