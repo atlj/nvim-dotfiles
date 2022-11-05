@@ -1,5 +1,7 @@
 # NVIM Dotfiles
 
+<img width="1051" alt="Screen Shot 2022-11-06 at 02 18 09" src="https://user-images.githubusercontent.com/23079646/200146000-eb674bc3-1281-4cff-9a1c-faf896eeb73e.png">
+
 These are my custom dotfiles for `nvim`. I'm using [AstroVim](https://github.com/AstroNvim/AstroNvim) as a solid base and build on top of that.
 Most edits are done in [the user init.lua file](./lua/user/init.lua)  
 
