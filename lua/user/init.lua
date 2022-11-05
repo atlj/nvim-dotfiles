@@ -212,12 +212,11 @@ local config = {
 
       { "junegunn/fzf", run = "./install --bin" },
       { "ibhagwan/fzf-lua", requires = { "kyazdani42/nvim-web-devicons" } },
-      {"tanvirtin/monokai.nvim",
-      as = "monokai",
-      config = function()
-          require('monokai').setup { palette = require('monokai').pro }
-      end
-       },
+      {
+        "tanvirtin/monokai.nvim",
+        as = "monokai",
+        config = function() require("monokai").setup { palette = require("monokai").pro } end,
+      },
     },
     ["neo-tree"] = {
       filesystem = {
