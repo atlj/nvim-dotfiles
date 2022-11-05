@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "default_theme",
+  colorscheme = "monokai",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -50,7 +50,7 @@ local config = {
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
-      autoformat_enabled = true, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
+      autoformat_enabled = false, -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
       cmp_enabled = true, -- enable completion at start
       autopairs_enabled = true, -- enable autopairs at start
       diagnostics_enabled = true, -- enable diagnostics at start
@@ -212,6 +212,12 @@ local config = {
 
       { "junegunn/fzf", run = "./install --bin" },
       { "ibhagwan/fzf-lua", requires = { "kyazdani42/nvim-web-devicons" } },
+      {"tanvirtin/monokai.nvim",
+      as = "monokai",
+      config = function()
+          require('monokai').setup { palette = require('monokai').pro }
+      end
+       },
     },
     ["neo-tree"] = {
       filesystem = {
