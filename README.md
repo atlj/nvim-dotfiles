@@ -19,7 +19,15 @@ brew install nvim
 mv ~/.config/nvim ~/.config/nvimbackup
 ```
 
-### 3. Get the dotfiles from git and run `PackerSync`
+### 3. Install `fzf`
+
+> You need to install `fzf` to enable fuzzy finding
+
+```bash
+brew install fzf
+```
+
+### 4. Get the dotfiles from git and run `PackerSync`
 
 ```bash
 git clone https://github.com/atlj/nvim-dotfiles ~/.config/nvim
