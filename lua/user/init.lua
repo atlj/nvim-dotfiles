@@ -209,11 +209,9 @@ local config = {
       -- ["goolord/alpha-nvim"] = { disable = true },
       --
 
+      { "puremourning/vimspector" },
+      { "simrat39/rust-tools.nvim" },
       { "junegunn/fzf", run = "./install --bin" },
-      {
-        "ibhagwan/fzf-lua",
-        requires = { "kyazdani42/nvim-web-devicons" },
-      },
       {
         "tanvirtin/monokai.nvim",
         as = "monokai",
@@ -324,8 +322,6 @@ local config = {
     vim.api.nvim_set_keymap("n", "<S- >", "<cmd>Format<cr>", { noremap = true, silent = true })
     vim.api.nvim_set_keymap("i", "<S- >", "<cmd>Format<cr>", { noremap = true, silent = true })
 
-    -- run :FzfLua files upon pressing leader f f
-    vim.api.nvim_set_keymap("n", "<leader>ff", "<cmd>FzfLua files<cr>", { noremap = true, silent = true })
     -- Add your own custom autocommands
     -- vim.cmd [[augroup custom]]
     -- vim.cmd [[autocmd!]]
