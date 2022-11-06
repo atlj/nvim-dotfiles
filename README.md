@@ -21,12 +21,12 @@ brew install nvim
 mv ~/.config/nvim ~/.config/nvimbackup
 ```
 
-### 3. Install `fzf`
+### 3. Install `fzf-lua` native dependencies
 
 > You need to install `fzf` to enable fuzzy finding
 
 ```bash
-brew install fzf
+brew install fzf fd
 ```
 
 ### 4. Get the dotfiles from git and run `PackerSync`
