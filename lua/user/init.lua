@@ -162,7 +162,6 @@ local config = {
     -- server_registration = function(server, opts)
     --   require("lspconfig")[server].setup(opts)
     -- end,
-
     -- Add overrides for LSP server settings, the keys are the name of the server
     ["server-settings"] = {
       -- example for addings schemas to yamlls
@@ -211,7 +210,10 @@ local config = {
       --
 
       { "junegunn/fzf", run = "./install --bin" },
-      { "ibhagwan/fzf-lua", requires = { "kyazdani42/nvim-web-devicons" } },
+      {
+        "ibhagwan/fzf-lua",
+        requires = { "kyazdani42/nvim-web-devicons" },
+      },
       {
         "tanvirtin/monokai.nvim",
         as = "monokai",
