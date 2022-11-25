@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "monokai",
+  colorscheme = "dracula",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -213,9 +213,8 @@ local config = {
       { "simrat39/rust-tools.nvim" },
       { "junegunn/fzf", run = "./install --bin" },
       {
-        "tanvirtin/monokai.nvim",
-        as = "monokai",
-        config = function() require("monokai").setup { palette = require("monokai").pro } end,
+        "Mofiqul/dracula.nvim",
+        as = "dracula",
       },
     },
     ["neo-tree"] = {
