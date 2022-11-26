@@ -254,6 +254,7 @@ local config = {
     telescope = {
       pickers = {
         find_files = {
+          theme = "dropdown",
           file_ignore_patterns = { "node_modules", "Pods" },
         },
       },
