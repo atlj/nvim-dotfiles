@@ -26,7 +26,7 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "dracula",
+  colorscheme = "gruvbox",
 
   -- Add highlight groups in any theme
   highlights = {
@@ -216,6 +216,7 @@ local config = {
         "Mofiqul/dracula.nvim",
         as = "dracula",
       },
+      { "morhetz/gruvbox", as = "gruvbox " },
     },
     ["neo-tree"] = {
       filesystem = {
