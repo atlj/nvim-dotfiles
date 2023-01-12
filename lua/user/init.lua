@@ -217,6 +217,7 @@ local config = {
         as = "dracula",
       },
       { "morhetz/gruvbox", as = "gruvbox " },
+      "eandrju/cellular-automaton.nvim",
     },
     ["neo-tree"] = {
       filesystem = {
