@@ -26,3 +26,5 @@ It's fast, reliable (at least when it works), customizable and fast
 - [ ] sync the yank register with system's clipboard
 - [ ] Automatically close paranthesis
 - [ ] Relative line numbers
+- [ ] Hide search with space h
+- [ ] ability to search backwards using `/`
