@@ -30,7 +30,6 @@ It's fast, reliable (at least when it works), customizable and fast
 - [ ] Ability to jump between windows holding ctrl
 - [ ] lead w for saving, lead g for LazyGit, lead b for git blame, lead a for LSP fix, lead d for LSP diagnostic, shift + space for formatting
 - [ ] sync the yank register with the system's clipboard
-- [ ] Automatically close parenthesis
 - [ ] Relative line numbers
 - [ ] Hide search with space h
 - [ ] ability to search backward using `/``
