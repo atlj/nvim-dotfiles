@@ -37,3 +37,4 @@ It's fast, reliable (at least when it works), customizable and fast
 - [ ] hold shift to move between buffers
 - [ ] show open buffers as tabs
 - [ ] Make LSP dialogs floating
+- [ ] Make it not go below 25% bottom
