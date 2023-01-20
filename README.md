@@ -22,7 +22,7 @@ It's fast, reliable (at least when it works), customizable and fast
 
 ## TODO:
 
-- [ ] Better file manager
+- [ ] Better file manager probably neotree
 - [ ] Plugin to show which key to press after lead
 - [ ] LSP
 - [ ] Mason
