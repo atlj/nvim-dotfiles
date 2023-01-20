@@ -13,6 +13,12 @@ It's fast, reliable (at least when it works), customizable and fast
 | lead f | fuzzy find files (respects `.gitignore`) |
 | lead ; | fuzzy find files (doesn't respect `.gitignore`)|
 | lead s | fuzzy find string |
+| lead w | write |
+| lead c | close |
+| lead d | show floating diagnostics |
+| lead a | show code actions |
+| lead r | rename |
+| lead shift | format |
 
 ## TODO:
 
@@ -22,9 +28,12 @@ It's fast, reliable (at least when it works), customizable and fast
 - [ ] Mason
 - [ ] Term using lead t
 - [ ] Ability to jump between windows holding ctrl
-- [ ] lead w for saving, lead g for lazygit, lead b for git blame, lead a for lsp fix, lead d for lsp diagnostic, shift + space for formatting
-- [ ] sync the yank register with system's clipboard
-- [ ] Automatically close paranthesis
+- [ ] lead w for saving, lead g for LazyGit, lead b for git blame, lead a for LSP fix, lead d for LSP diagnostic, shift + space for formatting
+- [ ] sync the yank register with the system's clipboard
+- [ ] Automatically close parenthesis
 - [ ] Relative line numbers
 - [ ] Hide search with space h
-- [ ] ability to search backwards using `/`
+- [ ] ability to search backward using `/``
+- [ ] hold shift to move between buffers
+- [ ] show open buffers as tabs
+- [ ] Make LSP dialogs floating
