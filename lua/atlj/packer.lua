@@ -55,4 +55,6 @@ return require('packer').startup(function(use)
 	use("akinsho/toggleterm.nvim")
 	use('mrjones2014/smart-splits.nvim')
 	use("folke/which-key.nvim")
+	use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
+	use 'famiu/bufdelete.nvim'
 end)
