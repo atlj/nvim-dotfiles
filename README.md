@@ -37,3 +37,4 @@ It's fast, reliable (at least when it works), customizable and fast
 - [ ] Make LSP dialogs floating
 - [ ] Make <C-n> select the first option instead of pressing return
 - [ ] Better status bar
+- [ ] Remap <leader>/ to comment
