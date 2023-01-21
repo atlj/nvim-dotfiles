@@ -22,6 +22,7 @@ It's fast, reliable (at least when it works), customizable and fast
 | lead g | open lazygit |
 | lead shift | format |
 | lead p | PackerSync command synces all of the packages |
+| lead b | Show the git blame for current line |
 | ctrl h | Go to left window |
 | ctrl l | Go to right window |
 | ctrl k | Go to top window |

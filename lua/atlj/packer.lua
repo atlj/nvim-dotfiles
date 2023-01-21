@@ -61,5 +61,8 @@ return require('packer').startup(function(use)
 	use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 	use 'famiu/bufdelete.nvim'
 	use 'numToStr/Comment.nvim'
-
+	use {
+		'lewis6991/gitsigns.nvim',
+		tag = 'release',
+	}
 end)
