@@ -28,10 +28,11 @@ It's fast, reliable (at least when it works), customizable and fast
 | ctrl j | Go to bottom window |
 | shift l | Go to next buffer |
 | shift h | Go to previous buffer |
+| gcc | Comment |
+| gcb | Block comment |
 
 ## TODO:
 
 - [ ] Make LSP dialogs floating
 - [ ] Make <C-n> select the first option instead of pressing return
 - [ ] Better status bar
-- [ ] lead + / = comment

@@ -38,6 +38,9 @@ return require('packer').startup(function(use)
 			{ 'hrsh7th/cmp-buffer' }, -- Optional
 			{ 'hrsh7th/cmp-path' }, -- Optional
 			{ 'hrsh7th/cmp-nvim-lua' }, -- Optional
+			{ 'saadparwaiz1/cmp_luasnip' }, -- Optional
+			-- Snippets
+			{ 'L3MON4D3/LuaSnip' }, -- Required
 		}
 	}
 
@@ -57,4 +60,6 @@ return require('packer').startup(function(use)
 	use("folke/which-key.nvim")
 	use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
 	use 'famiu/bufdelete.nvim'
+	use 'numToStr/Comment.nvim'
+
 end)
