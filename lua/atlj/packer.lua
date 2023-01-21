@@ -51,7 +51,7 @@ return require('packer').startup(function(use)
 		}
 	}
 
-	use {
-		"windwp/nvim-autopairs"
-	}
+	use("windwp/nvim-autopairs")
+	use("akinsho/toggleterm.nvim")
+	use('mrjones2014/smart-splits.nvim')
 end)
