@@ -18,8 +18,16 @@ It's fast, reliable (at least when it works), customizable and fast
 | lead d | show floating diagnostics |
 | lead a | show code actions |
 | lead r | rename |
+| lead t | open terminal |
+| lead g | open lazygit |
 | lead shift | format |
 | lead p | PackerSync command synces all of the packages |
+| ctrl h | Go to left window |
+| ctrl l | Go to right window |
+| ctrl k | Go to top window |
+| ctrl j | Go to bottom window |
+| shift l | Go to next buffer |
+| shift h | Go to previous buffer |
 
 ## TODO:
 
