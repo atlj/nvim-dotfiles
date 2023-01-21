@@ -23,9 +23,6 @@ It's fast, reliable (at least when it works), customizable and fast
 
 ## TODO:
 
-- [ ] lead w for saving, lead g for LazyGit, lead b for git blame, lead a for LSP fix, lead d for LSP diagnostic, shift + space for formatting
-- [ ] hold shift to move between buffers
-- [ ] show open buffers as tabs
 - [ ] Make LSP dialogs floating
 - [ ] Make <C-n> select the first option instead of pressing return
 - [ ] Better status bar
