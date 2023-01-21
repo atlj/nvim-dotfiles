@@ -1,5 +1,15 @@
 local lsp = require('lsp-zero')
-lsp.preset('recommended')
+local cmp = require("cmp")
+
+lsp.set_preferences({
+	suggest_lsp_servers = true,
+	setup_servers_on_start = true,
+	set_lsp_keymaps = true,
+	configure_diagnostics = true,
+	cmp_capabilities = true,
+	manage_nvim_cmp = true,
+	call_servers = 'local',
+})
 
 lsp.ensure_installed({
 	"tsserver",
@@ -19,4 +29,18 @@ lsp.on_attach(function(client, buffer)
 	vim.keymap.set("i", "<S- >", function() vim.cmd("LspZeroFormat") end, options)
 end)
 
+lsp.setup_nvim_cmp({
+	preselect = cmp.PreselectMode.None,
+	select_behavior = "insert"
+})
+
 lsp.setup()
+
+vim.diagnostic.config({
+	virtual_text = true,
+	signs = false,
+	update_in_insert = false,
+	underline = true,
+	severity_sort = false,
+	float = true,
+})
