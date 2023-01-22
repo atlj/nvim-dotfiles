@@ -10,7 +10,6 @@ vim.opt.smartindent = true
 vim.opt.preserveindent = true
 
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME")
 vim.opt.undofile = true
 
 vim.opt.hlsearch = false
