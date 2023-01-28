@@ -1,5 +1,4 @@
 local lsp = require('lsp-zero')
-local cmp = require("cmp")
 
 lsp.set_preferences({
 	suggest_lsp_servers = true,
@@ -29,8 +28,11 @@ lsp.on_attach(function(client, buffer)
 end)
 
 lsp.setup_nvim_cmp({
-	preselect = cmp.PreselectMode.None,
-	select_behavior = "insert"
+	preselect = "none",
+	select_behavior = "insert",
+	completion = {
+		completeopt = 'menu,menuone,noinsert,noselect'
+	},
 })
 
 lsp.setup()

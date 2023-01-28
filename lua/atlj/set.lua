@@ -26,6 +26,3 @@ vim.opt.clipboard = "unnamedplus"
 -- Hide the command line
 vim.opt.cmdheight = 0
 vim.opt.termguicolors = true
-
--- Alter the behavior of auto completeopt
-vim.opt.completeopt = { "menuone", "noselect" }
