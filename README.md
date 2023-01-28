@@ -1,10 +1,10 @@
-# atlj/neovim_config
+# atlj/nvim-dotfiles
 
-## Why?
+<img width="1149" alt="Screen Shot 2023-01-28 at 22 55 36" src="https://user-images.githubusercontent.com/23079646/215288153-36452fd0-2f86-485c-9c59-8bf60b3e5fc9.png">
 
 It's fast, reliable (at least when it works), customizable and fast
 
-## My Keys
+## Key bindings
 
 | Binding | What it does? |
 | --- | --- |
