@@ -1,14 +1,17 @@
+-- Line numbers
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+-- Tab stops
 vim.opt.tabstop = 2
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.shiftwidth = 2
 vim.expandtab = true
 
+-- Indentatin
 vim.opt.smartindent = true
 vim.opt.preserveindent = true
 
+-- Undo
 vim.opt.backup = false
 vim.opt.undofile = true
 
@@ -17,7 +20,12 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
 
+-- Share the clipboard between system and nvim
 vim.opt.clipboard = "unnamedplus"
 
+-- Hide the command line
 vim.opt.cmdheight = 0
 vim.opt.termguicolors = true
+
+-- Alter the behavior of auto completeopt
+vim.opt.completeopt = { "menuone", "noselect" }
