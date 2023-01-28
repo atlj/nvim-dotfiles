@@ -13,8 +13,6 @@ lsp.set_preferences({
 lsp.ensure_installed({
   "tsserver",
   "sumneko_lua",
-  "eslint_d",
-  "prettierd"
 })
 
 lsp.on_attach(function(client, buffer)
