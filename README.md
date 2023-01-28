@@ -4,6 +4,36 @@
 
 It's fast, reliable (at least when it works), customizable and fast
 
+## Installation
+
+### 1. Install nvm`
+
+For macOS, you can:
+
+```bash
+brew install nvim
+```
+
+### 2. Backup your current NeoVim config (If you have it)
+
+```bash
+mv ~/.config/nvim ~/.config/nvimbackup
+```
+
+### 3. Install `fzf-lua` native dependencies
+
+> You need to install `fzf` to enable fuzzy finding
+```bash
+brew install fzf fd rg
+```
+
+### 4. Get the dotfiles from git and run `PackerSync`
+
+```bash
+git clone https://github.com/atlj/nvim-dotfiles ~/.config/nvim
+nvim +PackerSync
+```
+
 ## Key bindings
 
 | Binding | What it does? |
@@ -21,7 +51,7 @@ It's fast, reliable (at least when it works), customizable and fast
 | lead t | open terminal |
 | lead g | open lazygit |
 | lead shift | format |
-| lead p | PackerSync command synces all of the packages |
+| lead p | PackerSync command synces all the packages |
 | lead b | Show the git blame for current line |
 | ctrl h | Go to left window |
 | ctrl l | Go to right window |
