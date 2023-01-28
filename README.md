@@ -6,7 +6,7 @@ It's fast, reliable (at least when it works), customizable and fast
 
 ## Installation
 
-### 1. Install nvm`
+### 1. Install `nvim`
 
 For macOS, you can:
 
