@@ -20,7 +20,7 @@ brew install nvim
 mv ~/.config/nvim ~/.config/nvimbackup
 ```
 
-### 3. Install `fzf-lua` native dependencies
+### 3. Install `telescope` native dependencies
 
 > You need to install `fzf` to enable fuzzy finding
 ```bash
