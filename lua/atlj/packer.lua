@@ -65,4 +65,8 @@ return require('packer').startup(function(use)
     'lewis6991/gitsigns.nvim',
     tag = 'release',
   }
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
 end)
