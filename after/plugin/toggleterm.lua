@@ -17,5 +17,5 @@ function _lazygit_toggle()
   lazygit:toggle()
 end
 
-vim.keymap.set("n", "<leader>t", vim.cmd.ToggleTerm)
+vim.keymap.set({"n", "t"}, "<C-j>", vim.cmd.ToggleTerm)
 vim.keymap.set("n", "<leader>g", function() vim.cmd("lua _lazygit_toggle()") end)

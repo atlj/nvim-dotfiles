@@ -48,7 +48,7 @@ nvim +PackerSync
 | lead d | show floating diagnostics |
 | lead a | show code actions |
 | lead r | rename |
-| lead t | open terminal |
+| control t | toggle terminal |
 | lead g | open lazygit |
 | lead shift | format |
 | lead p | PackerSync command synces all the packages |
