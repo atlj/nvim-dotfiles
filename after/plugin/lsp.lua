@@ -1,3 +1,6 @@
+-- It's important to setup neodev before lsp
+-- https://github.com/folke/neodev.nvim#-setup
+require("neodev").setup()
 local lsp = require('lsp-zero')
 
 lsp.set_preferences({

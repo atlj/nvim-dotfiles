@@ -80,6 +80,7 @@ return require('packer').startup(function(use)
     "atlj/Pixie.nvim",
     run = function() vim.cmd.PixieInstall() end
   })
+  use "folke/neodev.nvim"
 
   if is_bootstrap then
     require('packer').sync()
