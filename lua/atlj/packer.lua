@@ -81,14 +81,6 @@ return require('packer').startup(function(use)
     run = function() vim.cmd.PixieInstall() end
   })
   use "folke/neodev.nvim"
-  use {
-    'TheBlob42/houdini.nvim',
-    config = function()
-      require('houdini').setup {
-        mappings = { 'jk' },
-      }
-    end
-  }
 
   if is_bootstrap then
     require('packer').sync()
