@@ -13,11 +13,6 @@ lsp.set_preferences({
   call_servers = 'local',
 })
 
-lsp.ensure_installed({
-  "tsserver",
-  "sumneko_lua",
-})
-
 lsp.on_attach(function(client, buffer)
   local options = { buffer = buffer, remap = false }
 
