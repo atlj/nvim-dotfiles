@@ -61,4 +61,4 @@ nvim +PackerSync
 | shift h | Go to previous buffer |
 | gcc | Comment |
 | gcb | Block comment |
-
+| ctrl g | Open Diffview to compare current branch and main |
