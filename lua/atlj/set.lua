@@ -26,3 +26,6 @@ vim.opt.clipboard = "unnamedplus"
 -- Hide the command line
 vim.opt.cmdheight = 0
 vim.opt.termguicolors = true
+
+-- Append diagonal lines on diff mode
+vim.opt.fillchars:append { diff = "╱" }
