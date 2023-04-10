@@ -55,6 +55,7 @@ local builtin = require('telescope.builtin')
 whichkey.register {
   ['<leader>'] = {
     f = { builtin.find_files, 'Find files' },
+    [';'] = { function() builtin.find_files { no_ignore = true } end, 'Find files (doesn\'t respect .gitignore)' },
     s = { builtin.live_grep, 'Find string' }
   },
   gd = { builtin.lsp_definitions, 'Go to definition(s)' },
