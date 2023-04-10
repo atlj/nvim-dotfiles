@@ -36,27 +36,18 @@ nvim +PackerSync
 
 ## Key bindings
 
+> This configuration includes numerous key bindings that are not explicitly listed here. However, fear not, as I have implemented
+the "which-key" plugin to provide a comprehensive overview of all key mappings. Simply press the "space" key to reveal the full
+list of available mappings. With this feature, you can easily navigate and utilize the full range of key bindings at your
+disposal.
+
 | Binding | What it does? |
 | --- | --- |
-| space | lead key |
-| lead e | file manager |
-| lead f | fuzzy find files (respects `.gitignore`) |
-| lead ; | fuzzy find files (doesn't respect `.gitignore`)|
-| lead s | fuzzy find string |
-| lead w | write |
-| lead c | close |
-| lead d | show floating diagnostics |
-| lead a | show code actions |
-| lead r | rename |
-| control t | toggle terminal |
-| lead g | open lazygit |
-| lead shift | format |
-| lead p | PackerSync command synces all the packages |
-| lead b | Show the git blame for current line |
+| space | Lead key |
 | ctrl h | Go to left window |
 | ctrl l | Go to right window |
 | ctrl k | Go to top window |
-| ctrl j | Go to bottom window |
+| ctrl j | Open terminal |
 | shift l | Go to next buffer |
 | shift h | Go to previous buffer |
 | gcc | Comment |
