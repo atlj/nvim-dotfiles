@@ -1,5 +1,5 @@
 -- With this plugin, we can move between windows easily
-local smartsplits = require("smart-splits")
+local smartsplits = require('smart-splits')
 
 smartsplits.setup({
   -- the default number of lines/columns to resize by at a time

@@ -21,11 +21,11 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 8
 
 -- Share the clipboard between system and nvim
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = 'unnamedplus'
 
 -- Hide the command line
 vim.opt.cmdheight = 0
 vim.opt.termguicolors = true
 
 -- Append diagonal lines on diff mode
-vim.opt.fillchars:append { diff = "╱" }
+vim.opt.fillchars:append { diff = '╱' }

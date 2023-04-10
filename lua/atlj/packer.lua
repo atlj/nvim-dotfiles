@@ -22,7 +22,7 @@ return require('packer').startup(function(use)
 
   use({
     'nyoom-engineering/oxocarbon.nvim',
-    as = "oxocarbon",
+    as = 'oxocarbon',
     config = function()
       vim.cmd('colorscheme oxocarbon')
     end
@@ -51,20 +51,20 @@ return require('packer').startup(function(use)
   }
 
   use {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v2.x',
     requires = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+      'MunifTanjim/nui.nvim',
     }
   }
 
-  use("windwp/nvim-autopairs")
-  use("akinsho/toggleterm.nvim")
+  use('windwp/nvim-autopairs')
+  use('akinsho/toggleterm.nvim')
   use('mrjones2014/smart-splits.nvim')
   use{
-    "folke/which-key.nvim",
+    'folke/which-key.nvim',
     config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
@@ -73,9 +73,9 @@ return require('packer').startup(function(use)
   use {
     'akinsho/bufferline.nvim',
     config = function()
-      require("bufferline").setup{}
+      require('bufferline').setup{}
     end,
-    tag = "v3.*",
+    tag = 'v3.*',
     requires = 'nvim-tree/nvim-web-devicons'
   }
   use 'famiu/bufdelete.nvim'
@@ -85,23 +85,23 @@ return require('packer').startup(function(use)
     tag = 'release',
   }
   use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn['mkdp#util#install']() end,
   })
   use({
-    "atlj/Pixie.nvim",
+    'atlj/Pixie.nvim',
     run = function() vim.cmd.PixieInstall() end
   })
-  use "folke/neodev.nvim"
+  use 'folke/neodev.nvim'
 
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
   use({
-  "jackMort/ChatGPT.nvim",
+  'jackMort/ChatGPT.nvim',
     dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim"
+      'MunifTanjim/nui.nvim',
+      'nvim-lua/plenary.nvim',
+      'nvim-telescope/telescope.nvim'
     }
 })
 
