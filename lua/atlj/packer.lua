@@ -21,10 +21,10 @@ return require('packer').startup(function(use)
   }
 
   use({
-    'nyoom-engineering/oxocarbon.nvim',
-    as = 'oxocarbon',
+    'savq/melange-nvim',
+    as = 'melange',
     config = function()
-      vim.cmd('colorscheme oxocarbon')
+      vim.cmd('colorscheme melange')
     end
   })
 
