@@ -26,7 +26,7 @@ lsp.on_attach(function(_, _)
   whichkey.register {
     ['<leader>'] = {
       d = { vim.diagnostic.open_float, 'LSP diagnostic' },
-      a = { vim.lsp.buf.code_action(), 'LSP code action' },
+      a = { vim.lsp.buf.code_action, 'LSP code action' },
       r = { vim.lsp.buf.rename, 'Rename' },
     },
     K = { vim.lsp.buf.hover, 'Hover the code' }
