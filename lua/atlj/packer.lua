@@ -63,8 +63,21 @@ return require('packer').startup(function(use)
   use("windwp/nvim-autopairs")
   use("akinsho/toggleterm.nvim")
   use('mrjones2014/smart-splits.nvim')
-  use("folke/which-key.nvim")
-  use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
+  use{
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end
+  }
+  use {
+    'akinsho/bufferline.nvim',
+    config = function()
+      require("bufferline").setup{}
+    end,
+    tag = "v3.*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
   use 'famiu/bufdelete.nvim'
   use 'numToStr/Comment.nvim'
   use {

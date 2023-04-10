@@ -40,8 +40,3 @@ smartsplits.setup({
     'WinEnter',
   },
 })
-
-vim.keymap.set({ "n", "i", "t" }, "<C-l>", smartsplits.move_cursor_right)
-vim.keymap.set({ "n", "i", "t" }, "<C-h>", smartsplits.move_cursor_left)
-vim.keymap.set({ "n", "i", "t" }, "<C-j>", smartsplits.move_cursor_down)
-vim.keymap.set({ "n", "i", "t" }, "<C-k>", smartsplits.move_cursor_up)

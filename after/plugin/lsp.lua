@@ -13,17 +13,6 @@ lsp.set_preferences({
   call_servers = 'local',
 })
 
-lsp.on_attach(function(client, buffer)
-  local options = { buffer = buffer, remap = false }
-
-  vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, options)
-  vim.keymap.set("n", "<leader>d", function() vim.diagnostic.open_float() end, options)
-  vim.keymap.set("n", "<leader>a", function() vim.lsp.buf.code_action() end, options)
-  vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, options)
-  vim.keymap.set("n", "<S- >", function() vim.lsp.buf.format { async = true } end, options)
-  vim.keymap.set("i", "<S- >", function() vim.lsp.buf.format { async = true } end, options)
-end)
-
 lsp.setup_nvim_cmp({
   preselect = "none",
   select_behavior = "insert",

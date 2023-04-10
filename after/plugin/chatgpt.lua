@@ -78,7 +78,3 @@ require('chatgpt').setup(
       actions_paths = { '~/.config/nvim/custom_actions.json' }
     }
 )
-
-vim.keymap.set('n', '<leader>qc', vim.cmd.ChatGPT)
-vim.keymap.set('n', '<leader>qe', vim.cmd.ChatGPTEditWithInstructions)
-vim.keymap.set('n', '<leader>qp', vim.cmd.ChatGPTCompleteCode)

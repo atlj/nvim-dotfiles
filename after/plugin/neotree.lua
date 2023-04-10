@@ -152,5 +152,3 @@ require("neo-tree").setup({
     }
   },
 })
-
-vim.keymap.set("n", "<leader>e", vim.cmd.NeoTreeShowToggle)
