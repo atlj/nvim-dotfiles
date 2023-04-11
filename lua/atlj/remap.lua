@@ -17,7 +17,7 @@ whichkey.register {
   },
   ['<S-l>'] = { vim.cmd.BufferLineCycleNext, 'Next tab' },
   ['<S-h>'] = { vim.cmd.BufferLineCyclePrev, 'Previous tab' },
-  ['<C-g>'] = { function() vim.cmd('DiffviewOpen main...HEAD') end, 'Open Diffview against main branch' }
+  ['<C-g>'] = { function() vim.cmd('DiffviewOpen dev...HEAD') end, 'Open Diffview against dev branch' }
 }
 
 --- We need to make sure LSP bindings are loaded only if the LSP has attached
