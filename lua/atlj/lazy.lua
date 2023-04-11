@@ -97,5 +97,11 @@ require('lazy').setup {
       'nvim-telescope/telescope.nvim'
     }
   },
-  'stevearc/dressing.nvim'
+  'stevearc/dressing.nvim',
+  {
+    'zbirenbaum/copilot.lua',
+    config = function()
+      require('copilot').setup {}
+    end
+  }
 }
