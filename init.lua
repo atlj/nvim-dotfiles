@@ -1,4 +1,4 @@
-require('atlj.remap')
-require('atlj.packer')
+require('atlj.lazy')
 require('atlj.set')
+require('atlj.remap')
 require('atlj.autocmd')
