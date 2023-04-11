@@ -13,6 +13,16 @@ whichkey.register {
       c = { vim.cmd.ChatGPT, 'Chat' },
       e = { vim.cmd.ChatGPTEditWithInstructions, 'Edit' },
       p = { vim.cmd.ChatGPTCompleteCode, 'Complete code' }
+    },
+    x = {
+      function()
+        if (#vim.api.nvim_list_tabpages() > 1) then
+          vim.cmd.tabclose()
+        else
+          vim.cmd.xa()
+        end
+      end,
+      'Close tab or Neovim'
     }
   },
   ['<S-l>'] = { vim.cmd.BufferLineCycleNext, 'Next tab' },
