@@ -20,11 +20,12 @@ brew install nvim
 mv ~/.config/nvim ~/.config/nvimbackup
 ```
 
-### 3. Install `telescope` native dependencies
+### 3. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for fuzzy finding.
 
-> You need to install `fzf` to enable fuzzy finding
+> `ripgrep` is required for `Telescope`
+
 ```bash
-brew install fzf fd rg
+brew install rg
 ```
 
 ### 4. Get the dotfiles from git and run `PackerSync`
