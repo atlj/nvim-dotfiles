@@ -1,6 +1,8 @@
 vim.g.mapleader = ' '
 
 local whichkey = require('which-key')
+local dap = require('dap')
+local dapui = require('dapui')
 whichkey.register {
   ['<leader>'] = {
     w = { vim.cmd.write, 'Write file' },
@@ -23,6 +25,14 @@ whichkey.register {
         end
       end,
       'Close tab or Neovim'
+    },
+    p = {
+      name = 'DAP (Debugger)',
+      b = { dap.toggle_breakpoint, 'Toggle Breakpoint' },
+      c = { dap.continue, 'Continue' },
+      i = { dapui.toggle, 'Show DAP UI' },
+      l = { vim.cmd.DapShowLog, 'Show DAP logs' },
+      s = { dap.step_into, 'Step into' }
     }
   },
   ['<S-l>'] = { vim.cmd.BufferLineCycleNext, 'Next tab' },
