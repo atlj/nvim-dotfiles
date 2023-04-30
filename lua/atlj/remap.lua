@@ -7,7 +7,6 @@ whichkey.register {
   ['<leader>'] = {
     w = { vim.cmd.write, 'Write file' },
     c = { function() require('bufdelete').bufdelete(0, true) end, 'Close file' },
-    l = { function() vim.cmd('Lazy sync') end, 'Sync plugins' },
     e = { vim.cmd.NeoTreeShowToggle, 'Toggle the file explorer' },
     m = { vim.cmd.PixieCopy, 'Creates an image from the selected code' },
     q = {
