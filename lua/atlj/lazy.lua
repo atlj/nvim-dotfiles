@@ -100,9 +100,6 @@ require('lazy').setup {
   'stevearc/dressing.nvim',
   {
     'zbirenbaum/copilot.lua',
-    config = function()
-      require('copilot').setup {}
-    end
   },
 
   'mfussenegger/nvim-dap',
