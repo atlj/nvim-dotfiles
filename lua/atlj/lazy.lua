@@ -89,14 +89,6 @@ require('lazy').setup {
   },
   'folke/neodev.nvim',
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
-  {
-    'jackMort/ChatGPT.nvim',
-    dependencies = {
-      'MunifTanjim/nui.nvim',
-      'nvim-lua/plenary.nvim',
-      'nvim-telescope/telescope.nvim'
-    }
-  },
   'stevearc/dressing.nvim',
   {
     'zbirenbaum/copilot.lua',

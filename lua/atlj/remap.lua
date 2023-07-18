@@ -9,12 +9,6 @@ whichkey.register {
     c = { function() require('bufdelete').bufdelete(0, true) end, 'Close file' },
     e = { vim.cmd.NeoTreeShowToggle, 'Toggle the file explorer' },
     m = { vim.cmd.PixieCopy, 'Creates an image from the selected code' },
-    q = {
-      name = 'ChatGPT',
-      c = { vim.cmd.ChatGPT, 'Chat' },
-      e = { vim.cmd.ChatGPTEditWithInstructions, 'Edit' },
-      p = { vim.cmd.ChatGPTCompleteCode, 'Complete code' }
-    },
     x = {
       function()
         if (#vim.api.nvim_list_tabpages() > 1) then
