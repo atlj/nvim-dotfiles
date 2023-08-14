@@ -35,12 +35,8 @@ whichkey.register {
 
 --- We need to make sure LSP bindings are loaded only if the LSP has attached
 local lsp = require('lsp-zero')
-local function formatOrEslintFix()
-  if vim.bo.filetype == "typescript" or vim.bo.filetype == "typescriptreact" then
-    vim.cmd.EslintFixAll()
-  else
+local function formatAsync()
     vim.lsp.buf.format { async = true }
-  end
 end
 lsp.on_attach(function(_, _)
   whichkey.register {
@@ -52,8 +48,8 @@ lsp.on_attach(function(_, _)
     K = { vim.lsp.buf.hover, 'Hover the code' }
   }
 
-  vim.keymap.set('n', '<S- >', formatOrEslintFix)
-  vim.keymap.set('i', '<S- >', formatOrEslintFix)
+  vim.keymap.set('n', '<S- >', formatAsync)
+  vim.keymap.set('i', '<S- >', formatAsync)
 end)
 
 local smartsplits = require('smart-splits')
