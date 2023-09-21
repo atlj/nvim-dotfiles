@@ -2,6 +2,11 @@ local telescope = require('telescope')
 local actions = require('telescope.actions')
 
 telescope.setup({
+  pickers = {
+    git_bcommits = {
+      layout_strategy = 'vertical'
+    }
+  },
   defaults = {
     mappings = {
       i = {

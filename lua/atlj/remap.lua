@@ -36,7 +36,7 @@ whichkey.register {
 --- We need to make sure LSP bindings are loaded only if the LSP has attached
 local lsp = require('lsp-zero')
 local function formatAsync()
-    vim.lsp.buf.format { async = true }
+  vim.lsp.buf.format { async = true }
 end
 lsp.on_attach(function(_, _)
   whichkey.register {
@@ -72,7 +72,8 @@ whichkey.register {
   ['<leader>'] = {
     f = { builtin.find_files, 'Find files' },
     [';'] = { function() builtin.find_files { no_ignore = true } end, 'Find files (doesn\'t respect .gitignore)' },
-    s = { builtin.live_grep, 'Find string' }
+    s = { builtin.live_grep, 'Find string' },
+    G = { builtin.git_bcommits, 'Find git commits in current buffer' }
   },
   gd = { builtin.lsp_definitions, 'Go to definition(s)' },
   gr = { builtin.lsp_references, 'Go to reference(s)' }
