@@ -59,7 +59,6 @@ require('lazy').setup {
   },
   'windwp/nvim-autopairs',
   'akinsho/toggleterm.nvim',
-  'mrjones2014/smart-splits.nvim',
   {
     'folke/which-key.nvim',
     config = function()
@@ -106,8 +105,5 @@ require('lazy').setup {
     dependencies = {
       'mfussenegger/nvim-dap'
     }
-  },
-  {
-    'nvim-treesitter/nvim-treesitter-context'
   }
 }

@@ -52,11 +52,8 @@ lsp.on_attach(function(_, _)
   vim.keymap.set('i', '<S- >', formatAsync)
 end)
 
-local smartsplits = require('smart-splits')
-vim.keymap.set({ 'n', 'i', 't' }, '<C-l>', smartsplits.move_cursor_right)
-vim.keymap.set({ 'n', 'i', 't' }, '<C-h>', smartsplits.move_cursor_left)
-vim.keymap.set({ 'n', 'i', 't' }, '<C-j>', smartsplits.move_cursor_down)
-vim.keymap.set({ 'n', 'i', 't' }, '<C-k>', smartsplits.move_cursor_up)
+vim.keymap.set({ 'n', 'i', 't' }, '<C-l>', '<C-w>l')
+vim.keymap.set({ 'n', 'i', 't' }, '<C-h>', '<C-w>h')
 
 --- ToggleTerm
 vim.keymap.set({ 'n', 't' }, '<C-j>', vim.cmd.ToggleTerm)
