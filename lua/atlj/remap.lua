@@ -7,7 +7,14 @@ whichkey.register {
   ['<leader>'] = {
     w = { vim.cmd.write, 'Write file' },
     c = { function() require('bufdelete').bufdelete(0, true) end, 'Close file' },
-    e = { vim.cmd.NeoTreeShowToggle, 'Toggle the file explorer' },
+    e = {
+      ---@diagnostic disable-next-line: undefined-global
+      function()
+        MiniFiles.open(
+          vim.api.nvim_buf_get_name(0)
+        )
+      end,
+      'Toggle the file explorer' },
     m = { vim.cmd.PixieCopy, 'Creates an image from the selected code' },
     x = {
       function()

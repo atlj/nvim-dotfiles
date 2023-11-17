@@ -48,14 +48,6 @@ require('lazy').setup {
       { 'L3MON4D3/LuaSnip' },                  -- Required
     }
   },
-  {
-    'nvim-neo-tree/neo-tree.nvim',
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-      'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
-      'MunifTanjim/nui.nvim',
-    }
-  },
   'windwp/nvim-autopairs',
   'akinsho/toggleterm.nvim',
   {
@@ -68,7 +60,7 @@ require('lazy').setup {
   {
     'akinsho/bufferline.nvim',
     config = function()
-      require('bufferline').setup {}
+      require('bufferline').setup()
     end,
     dependencies = 'nvim-tree/nvim-web-devicons'
   },
@@ -111,5 +103,6 @@ require('lazy').setup {
         require('ibl').setup()
       end
     }
-  }
+  },
+  'echasnovski/mini.nvim'
 }
