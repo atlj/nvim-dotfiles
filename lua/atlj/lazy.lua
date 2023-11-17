@@ -103,5 +103,6 @@ require('lazy').setup {
     config = function()
       require('nvim-ts-autotag').setup()
     end
-  }
+  },
+  'nvim-lualine/lualine.nvim',
 }
