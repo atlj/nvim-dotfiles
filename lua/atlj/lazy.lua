@@ -97,13 +97,6 @@ require('lazy').setup {
       'mfussenegger/nvim-dap'
     }
   },
-  {
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {},
-      config = function()
-        require('ibl').setup()
-      end
-    }
-  },
   'echasnovski/mini.nvim',
   {
     'windwp/nvim-ts-autotag',
