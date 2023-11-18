@@ -28,29 +28,8 @@ mv ~/.config/nvim ~/.config/nvimbackup
 brew install rg
 ```
 
-### 4. Get the dotfiles from git and run `PackerSync`
+### 4. Get the dotfiles from git
 
 ```bash
 git clone https://github.com/atlj/nvim-dotfiles ~/.config/nvim
-nvim +PackerSync
 ```
-
-## Key bindings
-
-> This configuration includes numerous key bindings that are not explicitly listed here. However, fear not, as I have implemented
-the 'which-key' plugin to provide a comprehensive overview of all key mappings. Simply press the 'space' key to reveal the full
-list of available mappings. With this feature, you can easily navigate and utilize the full range of key bindings at your
-disposal.
-
-| Binding | What it does? |
-| --- | --- |
-| space | Lead key |
-| ctrl h | Go to left window |
-| ctrl l | Go to right window |
-| ctrl k | Go to top window |
-| ctrl j | Open terminal |
-| shift l | Go to next buffer |
-| shift h | Go to previous buffer |
-| gcc | Comment |
-| gcb | Block comment |
-| ctrl g | Open Diffview to compare current branch and main |
