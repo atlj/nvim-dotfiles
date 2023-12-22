@@ -105,4 +105,5 @@ require('lazy').setup {
     end
   },
   'nvim-lualine/lualine.nvim',
+  'andweeb/presence.nvim'
 }
