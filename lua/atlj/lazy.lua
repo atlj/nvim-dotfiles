@@ -70,10 +70,6 @@ require('lazy').setup {
     'lewis6991/gitsigns.nvim'
   },
   {
-    'iamcco/markdown-preview.nvim',
-    build = function() vim.fn['mkdp#util#install']() end,
-  },
-  {
     'atlj/Pixie.nvim',
     build = function() vim.cmd.PixieInstall() end
   },
