@@ -101,5 +101,10 @@ require('lazy').setup {
     end
   },
   'nvim-lualine/lualine.nvim',
-  'andweeb/presence.nvim'
+  'andweeb/presence.nvim',
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "VeryLazy",
+    opts = {},
+  }
 }
