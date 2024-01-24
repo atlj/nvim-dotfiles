@@ -33,6 +33,9 @@ whichkey.register {
       i = { dapui.toggle, 'Show DAP UI' },
       l = { vim.cmd.DapShowLog, 'Show DAP logs' },
       s = { dap.step_into, 'Step into' }
+    },
+    m = {
+      function() vim.cmd("DiffviewOpen") end, "Open the merge tool",
     }
   },
   ['<S-l>'] = { vim.cmd.BufferLineCycleNext, 'Next tab' },
