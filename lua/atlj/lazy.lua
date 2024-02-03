@@ -19,12 +19,8 @@ require('lazy').setup {
     }
   },
   {
-    "nyoom-engineering/oxocarbon.nvim",
-    name = "oxocarbon",
-    config = function()
-      vim.opt.background = "dark"
-      vim.cmd('colorscheme oxocarbon')
-    end
+    'ribru17/bamboo.nvim',
+    lazy = false,
   },
   -- {
   --   'savq/melange-nvim',
