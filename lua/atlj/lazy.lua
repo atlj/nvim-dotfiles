@@ -19,12 +19,20 @@ require('lazy').setup {
     }
   },
   {
-    'savq/melange-nvim',
-    name = 'melange',
+    "nyoom-engineering/oxocarbon.nvim",
+    name = "oxocarbon",
     config = function()
-      vim.cmd('colorscheme melange')
+      vim.opt.background = "dark"
+      vim.cmd('colorscheme oxocarbon')
     end
   },
+  -- {
+  --   'savq/melange-nvim',
+  --   name = 'melange',
+  --   config = function()
+  --     vim.cmd('colorscheme melange')
+  --   end
+  -- },
   {
     'nvim-treesitter/nvim-treesitter',
     build = function()
