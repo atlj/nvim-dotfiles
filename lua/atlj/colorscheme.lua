@@ -43,6 +43,8 @@
 -- }
 --
 -- require('bamboo').load()
-vim.cmd("colorscheme oxocarbon")
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- vim.cmd("colorscheme oxocarbon")
+
+vim.cmd('colorscheme melange')
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "#1c1c1c" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1c1c1c" })

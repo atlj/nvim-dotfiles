@@ -18,18 +18,18 @@ require('lazy').setup {
       'nvim-lua/plenary.nvim'
     }
   },
-  {
-    'ribru17/bamboo.nvim',
-    lazy = false,
-  },
-  "nyoom-engineering/oxocarbon.nvim",
   -- {
-  --   'savq/melange-nvim',
-  --   name = 'melange',
-  --   config = function()
-  --     vim.cmd('colorscheme melange')
-  --   end
+  --   'ribru17/bamboo.nvim',
+  --   lazy = false,
   -- },
+  -- "nyoom-engineering/oxocarbon.nvim",
+  {
+    'savq/melange-nvim',
+    name = 'melange',
+    config = function()
+      vim.cmd('colorscheme melange')
+    end
+  },
   {
     'nvim-treesitter/nvim-treesitter',
     build = function()
