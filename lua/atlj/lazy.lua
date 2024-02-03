@@ -22,6 +22,7 @@ require('lazy').setup {
     'ribru17/bamboo.nvim',
     lazy = false,
   },
+  "nyoom-engineering/oxocarbon.nvim",
   -- {
   --   'savq/melange-nvim',
   --   name = 'melange',

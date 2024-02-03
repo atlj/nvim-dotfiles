@@ -1,4 +1,5 @@
 require('atlj.lazy')
 require('atlj.set')
+require('atlj.colorscheme')
 require('atlj.remap')
 require('atlj.autocmd')
