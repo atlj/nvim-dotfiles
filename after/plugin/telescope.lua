@@ -5,7 +5,10 @@ telescope.setup({
   pickers = {
     git_bcommits = {
       layout_strategy = 'vertical'
-    }
+    },
+    find_files = {
+      layout_strategy = 'vertical'
+    },
   },
   defaults = {
     mappings = {
