@@ -36,6 +36,21 @@ whichkey.register {
     },
     m = {
       function() vim.cmd("DiffviewOpen") end, "Open the merge tool",
+    },
+    l = {
+      function()
+        vim.lsp.buf.code_action {
+          apply = true,
+          context = {
+            only = { 'quickfix' }
+          },
+          filter = function(action)
+            local title = action.title:lower()
+            return title:find('import')
+          end
+        }
+      end,
+      "Import the symbol under the cursor"
     }
   },
   ['<S-l>'] = { vim.cmd.BufferLineCycleNext, 'Next tab' },
