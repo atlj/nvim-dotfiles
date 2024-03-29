@@ -31,3 +31,11 @@ vim.diagnostic.config({
   severity_sort = false,
   float = true,
 })
+
+local lspconfig = require('lspconfig')
+
+lspconfig.sourcekit.setup({
+  cmd = { 'sourcekit-lsp' },
+  on_attach = lsp.on_attach,
+  capabilities = lsp.capabilities,
+})
