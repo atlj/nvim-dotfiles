@@ -39,3 +39,8 @@ lspconfig.sourcekit.setup({
   on_attach = lsp.on_attach,
   capabilities = lsp.capabilities,
 })
+
+lspconfig.clangd.setup({
+  on_attach = lsp.on_attach,
+  capabilities = lsp.capabilities,
+})

@@ -4,6 +4,17 @@ vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
   callback = function() vim.opt.filetype = 'ruby' end
 })
 
+vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
+  pattern = { '*.mm' },
+  callback = function() vim.opt.filetype = 'objective-cpp' end
+})
+
+vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
+  pattern = { '*.m' },
+  callback = function() vim.opt.filetype = 'objective-c' end
+})
+
+
 vim.api.nvim_create_autocmd({ 'BufWrite' }, {
   callback = function()
     if vim.bo.filetype == 'typescript' or vim.bo.filetype == 'typescriptreact' then
