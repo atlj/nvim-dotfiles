@@ -53,46 +53,52 @@ require('lazy').setup {
       { 'L3MON4D3/LuaSnip' },                  -- Required
     }
   },
-  'windwp/nvim-autopairs',
-  'akinsho/toggleterm.nvim',
+  { 'windwp/nvim-autopairs',   lazy = true },
+  { 'akinsho/toggleterm.nvim', lazy = true },
   {
     'folke/which-key.nvim',
     config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
-    end
+    end,
+    lazy = true
   },
   {
     'akinsho/bufferline.nvim',
     config = function()
       require('bufferline').setup()
     end,
-    dependencies = 'nvim-tree/nvim-web-devicons'
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    lazy = true
   },
-  'famiu/bufdelete.nvim',
-  'numToStr/Comment.nvim',
+  { 'famiu/bufdelete.nvim',  lazy = true },
+  { 'numToStr/Comment.nvim', lazy = true },
   {
-    'lewis6991/gitsigns.nvim'
+    'lewis6991/gitsigns.nvim',
+    lazy = true,
   },
   {
     'atlj/Pixie.nvim',
-    build = function() vim.cmd.PixieInstall() end
+    build = function() vim.cmd.PixieInstall() end,
+    lazy = true,
   },
   'folke/neodev.nvim',
-  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
+  { 'sindrets/diffview.nvim',    dependencies = 'nvim-lua/plenary.nvim', lazy = true },
   'stevearc/dressing.nvim',
   {
     'zbirenbaum/copilot.lua',
+    lazy = true
   },
   'echasnovski/mini.nvim',
   {
     'windwp/nvim-ts-autotag',
     config = function()
       require('nvim-ts-autotag').setup()
-    end
+    end,
+    lazy = true
   },
-  'nvim-lualine/lualine.nvim',
-  'andweeb/presence.nvim',
+  { 'nvim-lualine/lualine.nvim', lazy = true },
+  { 'andweeb/presence.nvim',     lazy = true },
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
