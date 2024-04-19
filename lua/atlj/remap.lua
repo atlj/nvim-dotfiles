@@ -88,6 +88,22 @@ whichkey.register {
   gr = { builtin.lsp_references, 'Go to reference(s)' }
 }
 
+--- Harpoon
+local harpoon = require("harpoon")
+
+whichkey.register {
+  ['<leader>'] = {
+    k = { function() harpoon:list():add() end, 'Add a new harpoon' },
+    h = { function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, 'Toggle the harpoon menu' },
+  },
+}
+
+vim.keymap.set("n", "<S-h>", function() harpoon:list():prev() end)
+vim.keymap.set("n", "<S-l>", function() harpoon:list():next() end)
+
+vim.keymap.set("n", "<C-s>", function() harpoon:list():select(1) end)
+vim.keymap.set("n", "<C-f>", function() harpoon:list():select(harpoon:list():length()) end)
+
 --- GitSigns
 local gitsigns = require('gitsigns')
 whichkey.register {
