@@ -13,7 +13,6 @@ whichkey.register {
         )
       end,
       'Toggle the file explorer' },
-    m = { vim.cmd.PixieCopy, 'Creates an image from the selected code' },
     x = {
       function()
         if (#vim.api.nvim_list_tabpages() > 1) then
