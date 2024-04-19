@@ -63,14 +63,6 @@ require('lazy').setup {
     end,
     lazy = true
   },
-  {
-    'akinsho/bufferline.nvim',
-    config = function()
-      require('bufferline').setup()
-    end,
-    dependencies = 'nvim-tree/nvim-web-devicons',
-    lazy = true
-  },
   { 'famiu/bufdelete.nvim',  lazy = true },
   { 'numToStr/Comment.nvim', lazy = true },
   {
@@ -89,7 +81,10 @@ require('lazy').setup {
     'zbirenbaum/copilot.lua',
     lazy = true
   },
-  'echasnovski/mini.nvim',
+  {
+    'echasnovski/mini.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
+  },
   {
     'windwp/nvim-ts-autotag',
     config = function()

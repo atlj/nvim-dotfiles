@@ -42,8 +42,6 @@ whichkey.register {
       "Import the symbol under the cursor"
     }
   },
-  ['<S-l>'] = { vim.cmd.BufferLineCycleNext, 'Next tab' },
-  ['<S-h>'] = { vim.cmd.BufferLineCyclePrev, 'Previous tab' },
   ['<C-g>'] = { function() vim.cmd('DiffviewOpen dev...HEAD') end, 'Open Diffview against dev branch' }
 }
 
