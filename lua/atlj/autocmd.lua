@@ -1,18 +1,3 @@
--- Set the filetype to `ruby` if file ends with `.podspec` or is named `Podfile`
-vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
-  pattern = { '*.podspec', 'Podfile' },
-  callback = function() vim.opt.filetype = 'ruby' end
-})
-
-vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
-  pattern = { '*.mm' },
-  callback = function() vim.opt.filetype = 'objective-cpp' end
-})
-
-vim.api.nvim_create_autocmd({ 'BufReadPost' }, {
-  pattern = { '*.m' },
-  callback = function() vim.opt.filetype = 'objective-c' end
-})
 
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
