@@ -3,6 +3,7 @@ vim.filetype.add {
     podspec = "ruby",
     Podfile = "ruby",
     mm = "objective-cpp",
-    m = "objective-c"
+    m = "objective-c",
+    wgsl = "wgsl"
   }
 }
