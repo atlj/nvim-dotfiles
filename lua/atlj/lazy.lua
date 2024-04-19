@@ -83,7 +83,7 @@ require('lazy').setup {
     lazy = true,
   },
   'folke/neodev.nvim',
-  { 'sindrets/diffview.nvim',    dependencies = 'nvim-lua/plenary.nvim', lazy = true },
+  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim', lazy = true },
   'stevearc/dressing.nvim',
   {
     'zbirenbaum/copilot.lua',
@@ -97,8 +97,7 @@ require('lazy').setup {
     end,
     lazy = true
   },
-  { 'nvim-lualine/lualine.nvim', lazy = true },
-  { 'andweeb/presence.nvim',     lazy = true },
+  { 'andweeb/presence.nvim',  lazy = true },
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",

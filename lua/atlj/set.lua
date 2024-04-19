@@ -33,3 +33,5 @@ vim.opt.fillchars:append { diff = '╱' }
 -- Set lcs to show whitespace as dots
 vim.opt.list = true
 vim.opt.lcs = vim.opt.lcs + 'eol:¬,trail:·'
+
+vim.opt.laststatus = 4
