@@ -40,6 +40,11 @@ lspconfig.sourcekit.setup({
   capabilities = lsp.capabilities,
 })
 
+lspconfig.wgsl_analyzer.setup({
+  on_attach = lsp.on_attach,
+  capabilities = lsp.capabilities,
+})
+
 lspconfig.clangd.setup({
   on_attach = lsp.on_attach,
   capabilities = lsp.capabilities,
