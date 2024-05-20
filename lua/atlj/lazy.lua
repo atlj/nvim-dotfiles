@@ -105,5 +105,6 @@ require('lazy').setup {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
     opts = {},
-  }
+  },
+  'nvim-pack/nvim-spectre',
 }
