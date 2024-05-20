@@ -121,3 +121,24 @@ local gitsigns = require('gitsigns')
 whichkey.register {
   ['<leader>b'] = { gitsigns.blame_line, 'Git blame current line' }
 }
+
+--- macrothis
+local macrothis = require('macrothis')
+
+whichkey.register {
+  ['<leader>'] = {
+    M = {
+      name = 'Macrothis',
+      d = { macrothis.delete, 'Delete' },
+      e = { macrothis.edit, 'Edit' },
+      l = { macrothis.load, 'Load' },
+      n = { macrothis.rename, 'Rename' },
+      q = { macrothis.quickfix, 'Run macro on all files in quickfix' },
+      r = { macrothis.run, 'Run macro' },
+      s = { macrothis.save, 'Save' },
+      x = { macrothis.register, 'Edit register' },
+      p = { macrothis.copy_register_printable, 'Copy register as printable' },
+      m = { macrothis.copy_macro_printable, 'Copy macro as printable' },
+    }
+  }
+}

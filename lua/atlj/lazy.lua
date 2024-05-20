@@ -107,4 +107,8 @@ require('lazy').setup {
     opts = {},
   },
   'nvim-pack/nvim-spectre',
+  {
+    "desdic/macrothis.nvim",
+    opts = {}
+  },
 }
