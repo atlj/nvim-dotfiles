@@ -45,6 +45,14 @@
 -- require('bamboo').load()
 -- vim.cmd("colorscheme oxocarbon")
 
-vim.cmd('colorscheme melange')
+-- vim.cmd('colorscheme melange')
+vim.g.everforest_colors_override = {
+  bg0 = { '#0B1419', '234' },
+  -- bg1 = { '#0B1419', '234' },
+  bg2 = { '#0B1419', '234' }
+}
+-- vim.g.everforest_colors_override = { bg0 = { '#1E2428', '234' } }
+-- vim.g.everforest_colors_override = { bg0 = { '#171B1E', '234' } }
+vim.cmd.colorscheme('everforest')
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "#1c1c1c" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1c1c1c" })

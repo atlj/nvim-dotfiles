@@ -31,12 +31,12 @@ require('lazy').setup {
   --   lazy = false,
   -- },
   -- "nyoom-engineering/oxocarbon.nvim",
+  -- {
+  --   'savq/melange-nvim',
+  --   name = 'melange',
+  -- },
   {
-    'savq/melange-nvim',
-    name = 'melange',
-    config = function()
-      vim.cmd('colorscheme melange')
-    end
+    'sainnhe/everforest',
   },
   {
     'nvim-treesitter/nvim-treesitter',
