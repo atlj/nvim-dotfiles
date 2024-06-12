@@ -18,7 +18,7 @@ vim.opt.undofile = true
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
-vim.opt.scrolloff = 999
+vim.opt.scrolloff = 8
 
 -- Share the clipboard between system and nvim
 vim.opt.clipboard = 'unnamedplus'
