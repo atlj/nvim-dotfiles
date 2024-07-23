@@ -18,22 +18,22 @@ vim.api.nvim_create_autocmd({ 'BufWrite' }, {
   end,
 })
 
-vim.api.nvim_create_autocmd({ 'BufWinEnter' }, {
-  callback = function(opts)
-    if (opts.file == "") then
-      return
-    end
-
-    vim.cmd.loadview()
-  end
-})
-
-vim.api.nvim_create_autocmd({ 'BufWinLeave' }, {
-  callback = function(opts)
-    if (opts.file == "") then
-      return
-    end
-
-    vim.cmd.mkview()
-  end
-})
+-- vim.api.nvim_create_autocmd({ 'BufWinEnter' }, {
+--   callback = function(opts)
+--     if (opts.file == "") then
+--       return
+--     end
+--
+--     vim.cmd.loadview()
+--   end
+-- })
+--
+-- vim.api.nvim_create_autocmd({ 'BufWinLeave' }, {
+--   callback = function(opts)
+--     if (opts.file == "") then
+--       return
+--     end
+--
+--     vim.cmd.mkview()
+--   end
+-- })

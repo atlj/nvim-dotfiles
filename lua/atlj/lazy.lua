@@ -31,13 +31,14 @@ require('lazy').setup {
   --   lazy = false,
   -- },
   -- "nyoom-engineering/oxocarbon.nvim",
-  -- {
-  --   'savq/melange-nvim',
-  --   name = 'melange',
-  -- },
+  {
+    'savq/melange-nvim',
+    name = 'melange',
+  },
   {
     'sainnhe/everforest',
   },
+  -- { "rose-pine/neovim",        name = "rose-pine" },
   {
     'nvim-treesitter/nvim-treesitter',
     build = function()
@@ -85,10 +86,10 @@ require('lazy').setup {
   'folke/neodev.nvim',
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim', lazy = true },
   'stevearc/dressing.nvim',
-  {
-    'zbirenbaum/copilot.lua',
-    lazy = true
-  },
+  -- {
+  --   'zbirenbaum/copilot.lua',
+  --   lazy = true
+  -- },
   {
     'echasnovski/mini.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
@@ -97,8 +98,7 @@ require('lazy').setup {
     'windwp/nvim-ts-autotag',
     config = function()
       require('nvim-ts-autotag').setup()
-    end,
-    lazy = true
+    end
   },
   { 'andweeb/presence.nvim',  lazy = true },
   {
@@ -110,5 +110,21 @@ require('lazy').setup {
   {
     "desdic/macrothis.nvim",
     opts = {}
+  },
+  {
+    "kawre/leetcode.nvim",
+    build = ":TSUpdate html",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim", -- required by telescope
+      "MunifTanjim/nui.nvim",
+
+      -- optional
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons",
+    },
+    opts = {
+      -- configuration goes here
+    },
   },
 }
