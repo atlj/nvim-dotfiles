@@ -86,10 +86,6 @@ require('lazy').setup {
   'folke/neodev.nvim',
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim', lazy = true },
   'stevearc/dressing.nvim',
-  -- {
-  --   'zbirenbaum/copilot.lua',
-  --   lazy = true
-  -- },
   {
     'echasnovski/mini.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' }
