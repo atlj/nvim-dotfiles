@@ -40,6 +40,10 @@ whichkey.register {
         }
       end,
       "Import the symbol under the cursor"
+    },
+    p = {
+      vim.diagnostic.setloclist,
+      "Show the problems"
     }
   },
   ['<C-g>'] = { function() vim.cmd('DiffviewOpen dev...HEAD') end, 'Open Diffview against dev branch' }
