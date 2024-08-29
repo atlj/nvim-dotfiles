@@ -44,6 +44,14 @@ whichkey.register {
     p = {
       vim.diagnostic.setloclist,
       "Show the problems"
+    },
+    q = {
+      function() vim.cmd('lbel') end,
+      'Go to the element below in the location list (window local quickfix)'
+    },
+    Q = {
+      function() vim.cmd('labo') end,
+      'Go to the element above in the location list (window local quickfix)'
     }
   },
   ['<C-g>'] = { function() vim.cmd('DiffviewOpen dev...HEAD') end, 'Open Diffview against dev branch' }
