@@ -7,10 +7,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
   end,
 })
 
--- Automatically format on save using EslintFixAll
 vim.api.nvim_create_autocmd({ 'BufWrite' }, {
-  callback = function()
-    if vim.bo.filetype == 'typescript' or vim.bo.filetype == 'typescriptreact' then
+  callback = function(args)
+    if vim.fn.exists ':EslintFixAll' == 2 then
       vim.cmd.EslintFixAll()
     else
       vim.cmd.LspZeroFormat()
