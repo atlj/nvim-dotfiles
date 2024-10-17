@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd({ 'BufWrite' }, {
   callback = function(args)
     if vim.fn.exists ':EslintFixAll' == 2 then
       vim.cmd.EslintFixAll()
-    else
+    elseif vim.fn.exists ':LspZeroFormat' == 2 then
       vim.cmd.LspZeroFormat()
     end
   end,
