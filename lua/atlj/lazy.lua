@@ -24,7 +24,8 @@ require('lazy').setup {
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       require("harpoon").setup()
-    end
+    end,
+    lazy = true
   },
   -- {
   --   'ribru17/bamboo.nvim',
@@ -63,7 +64,7 @@ require('lazy').setup {
       { 'L3MON4D3/LuaSnip' },                  -- Required
     }
   },
-  { 'windwp/nvim-autopairs', lazy = true },
+  { 'windwp/nvim-autopairs',   lazy = true },
   { 'akinsho/toggleterm.nvim', lazy = true },
   {
     'folke/which-key.nvim',
@@ -84,26 +85,30 @@ require('lazy').setup {
     build = function() vim.cmd.PixieInstall() end,
     lazy = true,
   },
-  'folke/neodev.nvim',
+  { 'folke/neodev.nvim',      lazy = true },
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim', lazy = true },
-  'stevearc/dressing.nvim',
+  { 'stevearc/dressing.nvim' },
   {
     'echasnovski/mini.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' }
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    lazy = true
   },
   {
     'windwp/nvim-ts-autotag',
     config = function()
       require('nvim-ts-autotag').setup()
-    end
+    end,
+    lazy = true
   },
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
     opts = {},
+    lazy = true
   },
   {
     "desdic/macrothis.nvim",
-    opts = {}
+    opts = {},
+    lazy = true
   },
 }
