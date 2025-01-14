@@ -45,7 +45,24 @@
 -- require('bamboo').load()
 -- vim.cmd("colorscheme oxocarbon")
 
-vim.cmd('colorscheme melange')
+-- vim.g.gruvbox_contrast_dark = "medium" -- soft, medium, hard
+-- vim.g.gruvbox_improved_strings = true
+-- vim.g.gruvbox_improved_warnings = true
+--
+-- vim.g.gruvbox_material_background = 'medium'
+-- vim.g.gruvbox_material_foreground = 'material'
+-- vim.g.gruvbox_material_enable_bold = 1
+-- vim.g.gruvbox_material_enable_italic = 1
+-- vim.g.gruvbox_material_better_performance = 1
+-- vim.g.gruvbox_material_float_style = 'dim'
+
+-- vim.cmd('colorscheme gruvbox-material')
+
+-- vim.g.lightline = {
+--   colorscheme = 'melange'
+-- }
+-- vim.cmd('colorscheme melange')
+vim.cmd('colorscheme miasma')
 -- vim.g.everforest_colors_override = {
 --   bg0 = { '#0B1419', '234' },
 --   -- bg1 = { '#0B1419', '234' },

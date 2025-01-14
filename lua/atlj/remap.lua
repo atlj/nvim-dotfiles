@@ -54,8 +54,11 @@ whichkey.register {
       'Go to the element above in the location list (window local quickfix)'
     }
   },
-  ['<C-g>'] = { function() vim.cmd('DiffviewOpen dev...HEAD') end, 'Open Diffview against dev branch' }
+  ['<C-g>'] = { function() vim.cmd('DiffviewOpen main...HEAD') end, 'Open Diffview against dev branch' }
 }
+
+vim.keymap.set({ 'n', 'v' }, 'gh', '^')
+vim.keymap.set({ 'n', 'v' }, 'gl', '$')
 
 --- We need to make sure LSP bindings are loaded only if the LSP has attached
 local lsp = require('lsp-zero')

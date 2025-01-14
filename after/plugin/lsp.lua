@@ -34,18 +34,19 @@ vim.diagnostic.config({
 
 local lspconfig = require('lspconfig')
 
-lspconfig.sourcekit.setup({
-  cmd = { 'sourcekit-lsp' },
+lspconfig.sourcekit.setup {
+  cmd = { '/Applications/Xcode-16.0.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp' },
+  -- cmd = { 'sourcekit-lsp' },
   on_attach = lsp.on_attach,
   capabilities = lsp.capabilities,
-})
+}
 
 lspconfig.wgsl_analyzer.setup({
   on_attach = lsp.on_attach,
   capabilities = lsp.capabilities,
 })
 
-lspconfig.clangd.setup({
-  on_attach = lsp.on_attach,
-  capabilities = lsp.capabilities,
-})
+-- lspconfig.clangd.setup({
+--   on_attach = lsp.on_attach,
+--   capabilities = lsp.capabilities,
+-- })

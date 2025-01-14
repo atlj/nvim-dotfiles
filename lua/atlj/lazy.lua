@@ -35,9 +35,10 @@ require('lazy').setup {
     'savq/melange-nvim',
     name = 'melange',
   },
-  {
-    'sainnhe/everforest',
-  },
+  "xero/miasma.nvim",
+  -- {
+  --   'sainnhe/everforest',
+  -- },
   -- { "rose-pine/neovim",        name = "rose-pine" },
   {
     'nvim-treesitter/nvim-treesitter',
