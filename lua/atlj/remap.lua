@@ -103,18 +103,6 @@ whichkey.register {
   gr = { builtin.lsp_references, 'Go to reference(s)' }
 }
 
--- Spectre
-
-local spectre = require('spectre')
-whichkey.register {
-  ['<leader>'] = {
-    S = {
-      spectre.toggle,
-      'Toggle Spectre'
-    }
-  }
-}
-
 --- Harpoon
 local harpoon = require("harpoon")
 

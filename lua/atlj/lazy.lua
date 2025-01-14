@@ -63,7 +63,7 @@ require('lazy').setup {
       { 'L3MON4D3/LuaSnip' },                  -- Required
     }
   },
-  { 'windwp/nvim-autopairs',   lazy = true },
+  { 'windwp/nvim-autopairs', lazy = true },
   { 'akinsho/toggleterm.nvim', lazy = true },
   {
     'folke/which-key.nvim',
@@ -97,31 +97,13 @@ require('lazy').setup {
       require('nvim-ts-autotag').setup()
     end
   },
-  { 'andweeb/presence.nvim',  lazy = true },
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
     opts = {},
   },
-  'nvim-pack/nvim-spectre',
   {
     "desdic/macrothis.nvim",
     opts = {}
-  },
-  {
-    "kawre/leetcode.nvim",
-    build = ":TSUpdate html",
-    dependencies = {
-      "nvim-telescope/telescope.nvim",
-      "nvim-lua/plenary.nvim", -- required by telescope
-      "MunifTanjim/nui.nvim",
-
-      -- optional
-      "nvim-treesitter/nvim-treesitter",
-      "nvim-tree/nvim-web-devicons",
-    },
-    opts = {
-      -- configuration goes here
-    },
   },
 }
