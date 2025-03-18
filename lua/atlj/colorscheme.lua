@@ -61,8 +61,8 @@
 -- vim.g.lightline = {
 --   colorscheme = 'melange'
 -- }
--- vim.cmd('colorscheme melange')
-vim.cmd('colorscheme miasma')
+vim.cmd('colorscheme deus')
+-- vim.cmd('colorscheme miasma')
 -- vim.g.everforest_colors_override = {
 --   bg0 = { '#0B1419', '234' },
 --   -- bg1 = { '#0B1419', '234' },

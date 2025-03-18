@@ -52,6 +52,10 @@ whichkey.register {
     Q = {
       function() vim.cmd('labo') end,
       'Go to the element above in the location list (window local quickfix)'
+    },
+    n = {
+      function() require('donedone').add_entry() end,
+      'Add a new donedone entry'
     }
   },
   ['<C-g>'] = { function() vim.cmd('DiffviewOpen main...HEAD') end, 'Open Diffview against dev branch' }
@@ -83,11 +87,16 @@ vim.keymap.set({ 'n', 'i', 't' }, '<C-l>', '<C-w>l')
 vim.keymap.set({ 'n', 'i', 't' }, '<C-h>', '<C-w>h')
 
 --- ToggleTerm
-vim.keymap.set({ 'n', 't' }, '<C-j>', vim.cmd.ToggleTerm)
 local Terminal = require('toggleterm.terminal').Terminal
-local lazyGit = Terminal:new({ cmd = 'lazygit', direction = 'float', hidden = true })
+local lazy_git = Terminal:new({ cmd = 'lazygit', direction = 'float', hidden = true })
 whichkey.register({
-  ['<leader>g'] = { function() lazyGit:toggle() end, 'Open LazyGit' },
+  ['<leader>g'] = { function() lazy_git:toggle() end, 'Open LazyGit' },
+})
+
+--- DoneDone
+local donedone = Terminal:new({ cmd = 'dndn', direction = 'float', hidden = true })
+whichkey.register({
+  ['<leader>;'] = { function() donedone:toggle() end, 'Open DoneDone' },
 })
 
 --- Telescope
@@ -95,7 +104,6 @@ local builtin = require('telescope.builtin')
 whichkey.register {
   ['<leader>'] = {
     f = { builtin.find_files, 'Find files' },
-    [';'] = { function() builtin.find_files { no_ignore = true } end, 'Find files (doesn\'t respect .gitignore)' },
     s = { builtin.live_grep, 'Find string' },
     G = { builtin.git_bcommits, 'Find git commits in current buffer' }
   },

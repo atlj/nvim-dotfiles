@@ -19,6 +19,30 @@ require('lazy').setup {
     }
   },
   {
+    "ajmwagar/vim-deus"
+  },
+  {
+    "folke/lazydev.nvim",
+    ft = "lua", -- only load on lua files
+    opts = {
+      library = {
+        -- See the configuration section for more details
+        -- Load luvit types when the `vim.uv` word is found
+        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+      },
+    },
+  },
+  {
+    'hrsh7th/nvim-cmp',
+    -- opts = function(_, opts)
+    --   opts.sources = opts.sources or {}
+    --   table.insert(opts.sources, {
+    --     name = "lazydev",
+    --     group_index = 0, -- set group index to 0 to skip loading LuaLS completions
+    --   })
+    -- end,
+  }, -- Required
+  {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -55,7 +79,6 @@ require('lazy').setup {
       { 'williamboman/mason.nvim' },           -- Optional
       { 'williamboman/mason-lspconfig.nvim' }, -- Optional
       -- Autocompletion
-      { 'hrsh7th/nvim-cmp' },                  -- Required
       { 'hrsh7th/cmp-nvim-lsp' },              -- Required
       { 'hrsh7th/cmp-buffer' },                -- Optional
       { 'hrsh7th/cmp-path' },                  -- Optional
@@ -85,8 +108,13 @@ require('lazy').setup {
     build = function() vim.cmd.PixieInstall() end,
     lazy = true,
   },
-  { 'folke/neodev.nvim',      lazy = true },
   { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim', lazy = true },
+  {
+    name = "donedone",
+    dir = "~/kod/donedone/",
+    dev = true,
+    opts = {}
+  },
   { 'stevearc/dressing.nvim' },
   {
     'echasnovski/mini.nvim',
