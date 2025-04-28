@@ -14,16 +14,14 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup {
   {
     "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" }
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    lazy = true
   },
   {
     'nvim-telescope/telescope.nvim',
     dependencies = {
       'nvim-lua/plenary.nvim'
     }
-  },
-  {
-    "ajmwagar/vim-deus"
   },
   {
     "folke/lazydev.nvim",
@@ -64,7 +62,9 @@ require('lazy').setup {
     'savq/melange-nvim',
     name = 'melange',
   },
-  "xero/miasma.nvim",
+  -- "xero/miasma.nvim",
+  -- "vague2k/vague.nvim",
+  -- "ajmwagar/vim-deus",
   -- {
   --   'sainnhe/everforest',
   -- },
@@ -88,7 +88,7 @@ require('lazy').setup {
       { 'hrsh7th/cmp-path' },                  -- Optional
       { 'hrsh7th/cmp-nvim-lua' },              -- Optional
       -- Snippets
-      { 'L3MON4D3/LuaSnip' },                  -- Required
+      -- { 'L3MON4D3/LuaSnip' },                  -- Required
     }
   },
   { 'windwp/nvim-autopairs',   lazy = true },
@@ -137,10 +137,5 @@ require('lazy').setup {
     event = "VeryLazy",
     opts = {},
     lazy = true
-  },
-  {
-    "desdic/macrothis.nvim",
-    opts = {},
-    lazy = true
-  },
+  }
 }
