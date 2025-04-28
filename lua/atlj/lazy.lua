@@ -1,3 +1,4 @@
+-- Setup lazy by cloning it if it isn't installed
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -12,70 +13,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup {
+  -- LANGUAGE TOOLS
   {
-    "pmizio/typescript-tools.nvim",
-    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    lazy = true
-  },
-  {
-    'nvim-telescope/telescope.nvim',
-    dependencies = {
-      'nvim-lua/plenary.nvim'
-    }
-  },
-  {
-    "folke/lazydev.nvim",
-    ft = "lua", -- only load on lua files
-    opts = {
-      library = {
-        -- See the configuration section for more details
-        -- Load luvit types when the `vim.uv` word is found
-        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
-      },
-    },
-  },
-  {
-    'hrsh7th/nvim-cmp',
-    -- opts = function(_, opts)
-    --   opts.sources = opts.sources or {}
-    --   table.insert(opts.sources, {
-    --     name = "lazydev",
-    --     group_index = 0, -- set group index to 0 to skip loading LuaLS completions
-    --   })
-    -- end,
-  }, -- Required
-  {
-    "ThePrimeagen/harpoon",
-    branch = "harpoon2",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      require("harpoon").setup()
-    end,
-    lazy = true
-  },
-  -- {
-  --   'ribru17/bamboo.nvim',
-  --   lazy = false,
-  -- },
-  -- "nyoom-engineering/oxocarbon.nvim",
-  {
-    'savq/melange-nvim',
-    name = 'melange',
-  },
-  -- "xero/miasma.nvim",
-  -- "vague2k/vague.nvim",
-  -- "ajmwagar/vim-deus",
-  -- {
-  --   'sainnhe/everforest',
-  -- },
-  -- { "rose-pine/neovim",        name = "rose-pine" },
-  {
-    'nvim-treesitter/nvim-treesitter',
-    build = function()
-      require("nvim-treesitter.install").update({ with_sync = true })
-    end,
-  },
-  {
+    -- Language Server
     'VonHeikemen/lsp-zero.nvim',
     dependencies = {
       -- LSP Support
@@ -91,9 +31,103 @@ require('lazy').setup {
       -- { 'L3MON4D3/LuaSnip' },                  -- Required
     }
   },
-  { 'windwp/nvim-autopairs',   lazy = true },
-  { 'akinsho/toggleterm.nvim', lazy = true },
   {
+    -- Syntax highlighting
+    'nvim-treesitter/nvim-treesitter',
+    build = function()
+      require("nvim-treesitter.install").update({ with_sync = true })
+    end,
+  },
+  {
+    -- Autocompletion menu
+    'hrsh7th/nvim-cmp',
+  },
+  {
+    -- A better typescript support
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    lazy = true
+  },
+  {
+    -- nvim lua plugin development language support
+    "folke/lazydev.nvim",
+    ft = "lua",
+    opts = {
+      library = {
+        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+      },
+    },
+  },
+  {
+    -- Inline function signature help
+    "ray-x/lsp_signature.nvim",
+    event = "VeryLazy",
+    opts = {},
+    lazy = true
+  },
+
+  -- EDITING
+  {
+    -- Pair support
+    'windwp/nvim-autopairs',
+    lazy = true
+  },
+  {
+    -- Toggling comments under the cursor
+    'numToStr/Comment.nvim',
+    lazy = true
+  },
+  {
+    -- Automatically closes all the buffers
+    'famiu/bufdelete.nvim',
+    lazy = true
+  },
+
+  -- BROWSING
+  {
+    -- Fuzzy finder
+    'nvim-telescope/telescope.nvim',
+    dependencies = {
+      'nvim-lua/plenary.nvim'
+    }
+  },
+  {
+    -- Bookmarks
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("harpoon").setup()
+    end,
+    lazy = true
+  },
+  {
+    -- Various plugins, mini.files is a great file manager
+    'echasnovski/mini.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    lazy = true
+  },
+
+  -- UI
+  {
+    -- Terminal UI
+    'akinsho/toggleterm.nvim',
+    lazy = true
+  },
+  {
+    -- Git changes in editor
+    'lewis6991/gitsigns.nvim',
+    lazy = true,
+  },
+  {
+    -- Git diff tab
+    'sindrets/diffview.nvim',
+    dependencies = 'nvim-lua/plenary.nvim',
+    lazy = true
+  },
+  'stevearc/dressing.nvim', -- UI component enhancements
+  {
+    -- A key helper
     'folke/which-key.nvim',
     config = function()
       vim.o.timeout = true
@@ -101,41 +135,29 @@ require('lazy').setup {
     end,
     lazy = true
   },
-  { 'famiu/bufdelete.nvim',  lazy = true },
-  { 'numToStr/Comment.nvim', lazy = true },
   {
-    'lewis6991/gitsigns.nvim',
-    lazy = true,
-  },
-  {
-    'atlj/Pixie.nvim',
-    build = function() vim.cmd.PixieInstall() end,
-    lazy = true,
-  },
-  { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim', lazy = true },
-  {
+    -- TODO manager
     name = "donedone",
     dir = "~/kod/donedone/",
     dev = true,
     opts = {}
   },
-  { 'stevearc/dressing.nvim' },
+
+  -- COLORSCHEMES
   {
-    'echasnovski/mini.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    lazy = true
+    'savq/melange-nvim',
+    name = 'melange',
   },
-  {
-    'windwp/nvim-ts-autotag',
-    config = function()
-      require('nvim-ts-autotag').setup()
-    end,
-    lazy = true
-  },
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "VeryLazy",
-    opts = {},
-    lazy = true
-  }
+  -- {
+  --   'ribru17/bamboo.nvim',
+  --   lazy = false,
+  -- },
+  -- "nyoom-engineering/oxocarbon.nvim",
+  -- "xero/miasma.nvim",
+  -- "vague2k/vague.nvim",
+  -- "ajmwagar/vim-deus",
+  -- {
+  --   'sainnhe/everforest',
+  -- },
+  -- { "rose-pine/neovim",        name = "rose-pine" },
 }
