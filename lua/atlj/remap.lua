@@ -99,16 +99,16 @@ whichkey.register({
   ['<leader>;'] = { function() donedone:toggle() end, 'Open DoneDone' },
 })
 
---- Telescope
-local builtin = require('telescope.builtin')
+--- fzf
+local fzf = require('fzf-lua')
 whichkey.register {
   ['<leader>'] = {
-    f = { builtin.find_files, 'Find files' },
-    s = { builtin.live_grep, 'Find string' },
-    G = { builtin.git_bcommits, 'Find git commits in current buffer' }
+    f = { fzf.files, 'Find files' },
+    s = { fzf.live_grep, 'Find string' },
+    G = { fzf.git_bcommits, 'Find git commits in current buffer' }
   },
-  gd = { builtin.lsp_definitions, 'Go to definition(s)' },
-  gr = { builtin.lsp_references, 'Go to reference(s)' }
+  gd = { fzf.lsp_definitions, 'Go to definition(s)' },
+  gr = { fzf.lsp_references, 'Go to reference(s)' }
 }
 
 --- Harpoon

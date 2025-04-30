@@ -22,7 +22,7 @@ mv ~/.config/nvim ~/.config/nvimbackup
 
 ### 3. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for fuzzy finding.
 
-> `ripgrep` is required for `Telescope`
+> `ripgrep` is required for `fzf-lua`
 
 ```bash
 brew install rg
