@@ -21,7 +21,7 @@ lsp.setup_nvim_cmp({
 lsp.setup()
 
 vim.diagnostic.config({
-  virtual_text = true,
+  virtual_text = false, -- handled by tiny-inline-diagnostic.lua
   signs = false,
   update_in_insert = false,
   underline = true,

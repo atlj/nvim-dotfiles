@@ -65,6 +65,15 @@ require('lazy').setup {
     opts = {},
     lazy = true
   },
+  {
+    -- Automatically sleep LSPs that are idle
+    "hinell/lsp-timeout.nvim"
+  },
+  {
+    -- Better inline diagnostics
+    "rachartier/tiny-inline-diagnostic.nvim",
+    event = "LspAttach"
+  },
 
   -- EDITING
   {
