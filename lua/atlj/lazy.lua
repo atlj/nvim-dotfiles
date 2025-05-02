@@ -153,9 +153,15 @@ require('lazy').setup {
 
   -- COLORSCHEMES
   {
-    'savq/melange-nvim',
-    name = 'melange',
+    'metalelf0/jellybeans-nvim',
+    dependencies = {
+      'rktjmp/lush.nvim'
+    }
   },
+  -- {
+  --   'savq/melange-nvim',
+  --   name = 'melange',
+  -- },
   -- {
   --   'ribru17/bamboo.nvim',
   --   lazy = false,
