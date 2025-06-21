@@ -82,14 +82,15 @@ require('lazy').setup {
     lazy = true
   },
   {
-    -- Toggling comments under the cursor
-    'numToStr/Comment.nvim',
-    lazy = true
-  },
-  {
     -- Automatically closes all the buffers
     'famiu/bufdelete.nvim',
     lazy = true
+  },
+  {
+    "folke/ts-comments.nvim",
+    opts = {},
+    event = "VeryLazy",
+    enabled = vim.fn.has("nvim-0.10.0") == 1,
   },
 
   -- BROWSING
