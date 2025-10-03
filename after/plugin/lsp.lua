@@ -32,18 +32,28 @@ vim.diagnostic.config({
 local lspconfig = require('lspconfig')
 
 lspconfig.sourcekit.setup {
-  cmd = { '/Applications/Xcode-16.0.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp' },
+  cmd = { '/Applications/Xcode-16.2.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp' },
   -- cmd = { 'sourcekit-lsp' },
   on_attach = lsp.on_attach,
   capabilities = lsp.capabilities,
 }
 
-lspconfig.wgsl_analyzer.setup({
-  on_attach = lsp.on_attach,
-  capabilities = lsp.capabilities,
-})
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    virtual_text = false
+  }
+)
 
--- lspconfig.clangd.setup({
---   on_attach = lsp.on_attach,
---   capabilities = lsp.capabilities,
+-- vim.lsp.config("ts_go_ls", {
+--   cmd = { vim.loop.os_homedir() .. "/kod/typescript-go/built/local/tsgo", "lsp", "-stdio" },
+--   filetypes = {
+--     "javascript",
+--     "javascriptreact",
+--     "javascript.jsx",
+--     "typescript",
+--     "typescriptreact",
+--     "typescript.tsx",
+--   },
+--   root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
 -- })
+-- vim.lsp.enable("ts_go_ls")

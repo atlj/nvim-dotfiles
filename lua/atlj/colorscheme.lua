@@ -61,8 +61,8 @@
 -- vim.g.lightline = {
 --   colorscheme = 'melange'
 -- }
--- vim.cmd('colorscheme melange')
-vim.cmd('colorscheme jellybeans-nvim')
+vim.cmd('colorscheme oh-lucy-evening')
+-- vim.cmd('colorscheme jellybeans-nvim')
 -- vim.cmd('colorscheme miasma')
 -- vim.g.everforest_colors_override = {
 --   bg0 = { '#0B1419', '234' },

@@ -28,7 +28,7 @@ require('lazy').setup {
       { 'hrsh7th/cmp-path' },                  -- Optional
       { 'hrsh7th/cmp-nvim-lua' },              -- Optional
       -- Snippets
-      -- { 'L3MON4D3/LuaSnip' },                  -- Required
+      { 'L3MON4D3/LuaSnip' },                  -- Required
     }
   },
   {
@@ -64,10 +64,6 @@ require('lazy').setup {
     event = "VeryLazy",
     opts = {},
     lazy = true
-  },
-  {
-    -- Automatically sleep LSPs that are idle
-    "hinell/lsp-timeout.nvim"
   },
   {
     -- Better inline diagnostics
@@ -159,10 +155,14 @@ require('lazy').setup {
       'rktjmp/lush.nvim'
     }
   },
-  -- {
-  --   'savq/melange-nvim',
-  --   name = 'melange',
-  -- },
+  {
+    'savq/melange-nvim',
+    name = 'melange',
+  },
+  {
+    'atelierbram/vim-colors_atelier-schemes'
+  },
+  'Yazeed1s/oh-lucy.nvim'
   -- {
   --   'ribru17/bamboo.nvim',
   --   lazy = false,

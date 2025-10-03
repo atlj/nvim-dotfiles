@@ -30,6 +30,8 @@ vim.opt.termguicolors = true
 -- Append diagonal lines on diff mode
 vim.opt.fillchars:append { diff = '╱' }
 
+vim.o.messagesopt = "wait:0,history:500"
+
 -- Set lcs to show whitespace as dots
 vim.opt.list = true
 vim.opt.lcs = vim.opt.lcs + 'eol:¬,trail:·'

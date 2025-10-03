@@ -132,3 +132,21 @@ local gitsigns = require('gitsigns')
 whichkey.register {
   ['<leader>b'] = { gitsigns.blame_line, 'Git blame current line' }
 }
+
+--- LuaSnip
+local luasnip = require("luasnip")
+vim.keymap.set({ "i" }, "<C-e>", function() luasnip.expand() end, { silent = false })
+vim.keymap.set({ "i" }, "<C-l>", function() luasnip.jump(1) end, { silent = false })
+vim.keymap.set({ "i" }, "<C-h>", function() luasnip.jump(-1) end, { silent = false })
+
+vim.keymap.set({ "i", "s" }, "<C-n>", function()
+  if luasnip.choice_active() then
+    luasnip.change_choice(1)
+  end
+end, { silent = false })
+
+vim.keymap.set({ "i", "s" }, "<C-p>", function()
+  if luasnip.choice_active() then
+    luasnip.change_choice(-1)
+  end
+end, { silent = false })
