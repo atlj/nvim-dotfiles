@@ -86,6 +86,9 @@ end)
 vim.keymap.set({ 'n', 'i', 't' }, '<C-l>', '<C-w>l')
 vim.keymap.set({ 'n', 'i', 't' }, '<C-h>', '<C-w>h')
 
+-- replace paste with paste without yanking
+vim.keymap.set({ 'n', 'x' }, 'p', 'P', { desc = "Paste before (re-mapped from 'p')" })
+
 --- ToggleTerm
 local Terminal = require('toggleterm.terminal').Terminal
 local lazy_git = Terminal:new({ cmd = 'lazygit', direction = 'float', hidden = true })
