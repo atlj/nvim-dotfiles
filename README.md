@@ -8,10 +8,10 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Settings
-    - Automatically close the the paranthesis
 - Treesitter
-- LSPs
+- Harpoon
+- lazygit and toggleterm
+- LSPs without any third party dependencies
 - Document the nvim version here.
 
 ## Installation
