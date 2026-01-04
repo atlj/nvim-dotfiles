@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "mini.nvim": {
+      "rev": "5d8d141cb113e9d235c9215475b26b0d20612150",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "which-key.nvim": {
+      "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
+      "src": "https://github.com/folke/which-key.nvim"
+    }
+  }
+}
