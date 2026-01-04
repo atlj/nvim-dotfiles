@@ -1,35 +1,24 @@
-# atlj/nvim-dotfiles
+# The Best Nvim Config Ever
 
-<img width='1149' alt='A terminal window that displays my neovim config' src='https://github.com/atlj/nvim-dotfiles/assets/23079646/6768b6fe-34a1-462d-9dde-537d95bca56f'>
+The idea is:
+1. Use nvim's own dependency manager.
+1. Use as few 3rd party dependencies as possible.
+1. Config has to work out of the box.
+1. Nothing should interrupt editing. No error messages, no prompts, no nothing. Just the editor.
+1. Everything should be documented.
 
-It's fast, reliable (at least when it works), customizable and fast
+## TODO:
+- Simple project structure
+- Settings
+- Use nvim's own package manager
+- File tree
+- LSPs
+- Document the nvim version here.
 
 ## Installation
 
-### 1. Install `nvim`
+### 1. Install Everything Else
 
-For macOS, you can:
+### 2. Install `nvim`
 
-```bash
-brew install nvim
-```
-
-### 2. Backup your current NeoVim config (If you have it)
-
-```bash
-mv ~/.config/nvim ~/.config/nvimbackup
-```
-
-### 3. Install [ripgrep](https://github.com/BurntSushi/ripgrep) for fuzzy finding.
-
-> `ripgrep` is required for `fzf-lua`
-
-```bash
-brew install rg
-```
-
-### 4. Get the dotfiles from git
-
-```bash
-git clone https://github.com/atlj/nvim-dotfiles ~/.config/nvim
-```
+### 3. Clone config
