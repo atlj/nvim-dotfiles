@@ -10,7 +10,10 @@ The idea is:
 ## TODO:
 - Simple project structure
 - Settings
+    - Automatically close the the paranthesis
 - Use nvim's own package manager
+- Treesitter
+- Keymaps with whichkey
 - File tree
 - LSPs
 - Document the nvim version here.
