@@ -8,19 +8,17 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Simple project structure
 - Settings
     - Automatically close the the paranthesis
-- Use nvim's own package manager
 - Treesitter
-- Keymaps with whichkey
-- File tree
 - LSPs
 - Document the nvim version here.
 
 ## Installation
 
 ### 1. Install Everything Else
+
+1. [fzf](https://github.com/junegunn/fzf)
 
 ### 2. Install `nvim`
 

@@ -1,8 +1,16 @@
 {
   "plugins": {
+    "fzf-lua": {
+      "rev": "a03d68e40eea835a1cdbd9f93049708dab3621e6",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
     "mini.nvim": {
       "rev": "5d8d141cb113e9d235c9215475b26b0d20612150",
       "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "nvim-web-devicons": {
+      "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",

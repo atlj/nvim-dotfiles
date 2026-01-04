@@ -21,3 +21,14 @@ wk.add {
     desc = 'Close Tab'
   },
 }
+
+-- fzf-lua
+
+local fzf = require('fzf-lua')
+wk.add {
+  { '<leader>f', fzf.files, desc = 'Find Files' },
+  { '<leader>s', fzf.live_grep, desc = 'Find String' },
+  { '<leader>G', fzf.git_bcommits, desc = 'Find Git Commits' },
+  { 'gd', fzf.lsp_definitions, desc = 'Go to Definition(s)' },
+  { 'gr', fzf.lsp_references, desc = 'Go to Reference(s)' },
+}
