@@ -22,6 +22,29 @@ wk.add {
   },
 }
 
+-- LSP
+wk.add {
+  {
+    '<leader>l',
+    function()
+      vim.lsp.buf.code_action {
+        apply = true,
+        context = {
+          only = { 'quickfix' }
+        },
+        filter = function(action)
+          local title = action.title:lower()
+          return title:find('import') ~= nil
+        end
+      }
+    end,
+    desc = "Import the Symbol Under Cursor"
+  },
+  { '<leader>d', vim.diagnostic.open_float, desc = 'Show LSP Diagnostics'},
+  { '<leader>a', vim.lsp.buf.code_action, desc = 'Show Code Actions'},
+  { '<leader>r', vim.lsp.buf.rename, desc = 'Show Code Actions'},
+}
+
 -- fzf-lua
 
 local fzf = require('fzf-lua')

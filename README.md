@@ -8,11 +8,16 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- LSP actions (rename, quick actions etc.)
 - Format on save
 - Document the nvim version here.
 - Automate treesitter downloads
 - eslint
+- diffview
+- get ts-comments working.
+- Make sure enter doesn't get interrupted by completion menu
+- Autoimport the autocompleted item
+- Incremental selection with `,`
+- surround
 
 ## Installation
 
