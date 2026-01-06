@@ -8,7 +8,6 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- surround
 - Autoimport the autocompleted item
 - Make sure enter doesn't get interrupted by completion menu
 - Document the nvim version here.
@@ -16,6 +15,7 @@ The idea is:
 - diffview
 - get ts-comments working.
 - Incremental selection with `,`
+- A cool landing page
 
 ## Installation
 
