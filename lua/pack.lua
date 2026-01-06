@@ -44,6 +44,9 @@ vim.pack.add(
     -- Typed vim api
     g('folke/lazydev.nvim'),
 
+    -- Inline diagnostics
+    g('rachartier/tiny-inline-diagnostic.nvim'),
+
     -- ColorScheme
     g('Yazeed1s/oh-lucy.nvim'),
 
