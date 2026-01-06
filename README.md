@@ -9,8 +9,8 @@ The idea is:
 
 ## TODO:
 - LSP actions (rename, quick actions etc.)
+- Format on save
 - Document the nvim version here.
-- Harpoon
 - Automate treesitter downloads
 - eslint
 

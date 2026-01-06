@@ -46,10 +46,14 @@ vim.pack.add(
 
     -- ColorScheme
     g('Yazeed1s/oh-lucy.nvim'),
-    -- Dependent on Plenary
+
+    -- Start of Depends on Plenary
     g('nvim-lua/plenary.nvim'),
     -- A better TypeScript LSP
     g('pmizio/typescript-tools.nvim'),
+    -- A tool to save buffers per project
+    { src = g('ThePrimeagen/harpoon'), version = "harpoon2" }
+    -- End of Depends on Plenary
   },
   {
     -- Don't ask for confirmation

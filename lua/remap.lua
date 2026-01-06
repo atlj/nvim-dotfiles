@@ -48,3 +48,19 @@ local gitsigns = require('gitsigns')
 wk.add {
   { '<leader>b', gitsigns.blame_line, desc = "Git blame current line" }
 }
+
+--- Harpoon
+
+local harpoon = require("harpoon")
+
+wk.add {
+  { '<leader>k', function() harpoon:list():add() end, desc = "Harpoon the File"},
+  { '<leader>h', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, desc = "Toggle the Harpoon Menu"},
+  {
+    mode = "n",
+    { "<S-h>", function() harpoon:list():prev() end, desc = "Previous Harpooned File"},
+    { "<S-l>", function() harpoon:list():prev() end, desc = "Next Harpooned File"},
+    { "<C-s>", function() harpoon:list():prev() end, desc = "First Harpooned File"},
+    { "<C-f>", function() harpoon:list():prev() end, desc = "Last Harpooned File"},
+  }
+}
