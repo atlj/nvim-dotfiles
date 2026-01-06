@@ -8,10 +8,11 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- LSP keys
+- LSP actions (rename, quick actions etc.)
 - Document the nvim version here.
 - Harpoon
 - Automate treesitter downloads
+- eslint
 
 ## Installation
 

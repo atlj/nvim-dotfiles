@@ -46,6 +46,10 @@ vim.pack.add(
 
     -- ColorScheme
     g('Yazeed1s/oh-lucy.nvim'),
+    -- Dependent on Plenary
+    g('nvim-lua/plenary.nvim'),
+    -- A better TypeScript LSP
+    g('pmizio/typescript-tools.nvim'),
   },
   {
     -- Don't ask for confirmation
