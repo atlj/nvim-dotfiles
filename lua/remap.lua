@@ -41,3 +41,10 @@ local lazygit = Terminal:new({ cmd = 'lazygit', hidden = true, direction = 'floa
 wk.add {
   { '<leader>g', function() lazygit:toggle() end, desc = "Toggle Lazygit" }
 }
+
+-- gitsigns
+
+local gitsigns = require('gitsigns')
+wk.add {
+  { '<leader>b', gitsigns.blame_line, desc = "Git blame current line" }
+}

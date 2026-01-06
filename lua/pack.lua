@@ -30,6 +30,9 @@ vim.pack.add(
 
     -- Floating terminals. Useful for lazygit.
     g('akinsho/toggleterm.nvim'),
+
+    -- Git blame
+    g('lewis6991/gitsigns.nvim'),
   },
   {
     -- Don't ask for confirmation

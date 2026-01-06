@@ -46,3 +46,6 @@ vim.o.messagesopt = 'wait:0,history:500'
 -- Display whitespaces
 vim.opt.list = true
 vim.opt.listchars:append{eol = '¬', trail = '·'}
+
+-- Always display the sign column. Prevents jumping
+vim.opt.signcolumn = 'yes'
