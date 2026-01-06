@@ -47,6 +47,9 @@ vim.pack.add(
     -- ColorScheme
     g('Yazeed1s/oh-lucy.nvim'),
 
+    -- A better UI Picker
+    g('stevearc/dressing.nvim'),
+
     -- Start of Depends on Plenary
     g('nvim-lua/plenary.nvim'),
     -- A better TypeScript LSP

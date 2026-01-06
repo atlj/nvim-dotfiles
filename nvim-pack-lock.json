@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "dressing.nvim": {
+      "rev": "2d7c2db2507fa3c4956142ee607431ddb2828639",
+      "src": "https://github.com/stevearc/dressing.nvim"
+    },
     "fzf-lua": {
       "rev": "a03d68e40eea835a1cdbd9f93049708dab3621e6",
       "src": "https://github.com/ibhagwan/fzf-lua"
