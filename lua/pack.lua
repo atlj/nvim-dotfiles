@@ -1,19 +1,35 @@
 local function g(x) return 'https://github.com/' .. x end
 
-vim.pack.add {
-  -- Various plugins. Like mini.files which is a file manager
-  g('nvim-mini/mini.nvim'),
+local function hooks(ev)
+  local name, kind = ev.data.spec.name, ev.data.kind
 
-  -- Shows key mapping
-  g('folke/which-key.nvim'),
+  -- Build treesitter
+  if name == 'nvim-treesitter' and (kind == 'install' or kind == 'update') then
+    require("nvim-treesitter.install").update({ with_sync = true })
+  end
+end
+vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
 
-  -- Fuzzy finding
-  g('ibhagwan/fzf-lua'),
-  g('nvim-tree/nvim-web-devicons'),
+vim.pack.add(
+  {
+    -- Various plugins. Like mini.files which is a file manager
+    g('nvim-mini/mini.nvim'),
 
-  -- Automatically add pairs
-  g('windwp/nvim-autopairs'),
+    -- Shows key mapping
+    g('folke/which-key.nvim'),
 
-  -- Syntax highlighting
-  g('nvim-treesitter/nvim-treesitter'),
-}
+    -- Fuzzy finding
+    g('ibhagwan/fzf-lua'),
+    g('nvim-tree/nvim-web-devicons'),
+
+    -- Automatically add pairs
+    g('windwp/nvim-autopairs'),
+
+    -- Syntax highlighting
+    g('nvim-treesitter/nvim-treesitter'),
+  },
+  {
+    -- Don't ask for confirmation
+    confirm = false
+  }
+) 

@@ -13,7 +13,7 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-treesitter": {
-      "rev": "31fc7e10cd7c1fd7717b439050d0f91c2c4f0a4b",
+      "rev": "b033ab331ca0bccbd93c3c2b4f886fdfc09abec0",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-web-devicons": {

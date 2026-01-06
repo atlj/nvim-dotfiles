@@ -8,7 +8,6 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Treesitter
 - Harpoon
 - lazygit and toggleterm
 - LSPs without any third party dependencies
