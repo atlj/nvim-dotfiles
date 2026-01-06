@@ -9,7 +9,6 @@ The idea is:
 
 ## TODO:
 - Harpoon
-- lazygit and toggleterm
 - LSPs without any third party dependencies
 - Document the nvim version here.
 
@@ -18,6 +17,7 @@ The idea is:
 ### 1. Install Everything Else
 
 1. [fzf](https://github.com/junegunn/fzf)
+1. (Optional) [lazygit](https://github.com/jesseduffield/lazygit)
 
 ### 2. Install `nvim`
 

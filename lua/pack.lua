@@ -5,7 +5,7 @@ local function hooks(ev)
 
   -- Build treesitter
   if name == 'nvim-treesitter' and (kind == 'install' or kind == 'update') then
-    require("nvim-treesitter.install").update({ with_sync = true })
+    vim.cmd.TSUpdate()
   end
 end
 vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
@@ -27,6 +27,9 @@ vim.pack.add(
 
     -- Syntax highlighting
     g('nvim-treesitter/nvim-treesitter'),
+
+    -- Floating terminals. Useful for lazygit.
+    g('akinsho/toggleterm.nvim'),
   },
   {
     -- Don't ask for confirmation

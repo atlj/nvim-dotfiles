@@ -32,3 +32,12 @@ wk.add {
   { 'gd', fzf.lsp_definitions, desc = 'Go to Definition(s)' },
   { 'gr', fzf.lsp_references, desc = 'Go to Reference(s)' },
 }
+
+-- lazygit
+
+local Terminal  = require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({ cmd = 'lazygit', hidden = true, direction = 'float' })
+
+wk.add {
+  { '<leader>g', function() lazygit:toggle() end, desc = "Toggle Lazygit" }
+}

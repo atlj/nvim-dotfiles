@@ -20,6 +20,10 @@
       "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
+    "toggleterm.nvim": {
+      "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
+      "src": "https://github.com/akinsho/toggleterm.nvim"
+    },
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
       "src": "https://github.com/folke/which-key.nvim"

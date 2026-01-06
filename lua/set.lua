@@ -1,6 +1,8 @@
 -- Set the options
 -- :h lua-guide-options
 
+-- Show the current line number
+vim.opt.number = true
 -- Enable relative numbers
 vim.opt.relativenumber = true
 
