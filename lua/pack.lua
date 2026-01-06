@@ -41,6 +41,8 @@ vim.pack.add(
     g('mason-org/mason.nvim'),
     -- Bridge between those two
     g('mason-org/mason-lspconfig.nvim'),
+    -- Typed vim api
+    g('folke/lazydev.nvim')
   },
   {
     -- Don't ask for confirmation
