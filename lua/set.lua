@@ -49,3 +49,10 @@ vim.opt.listchars:append{eol = '¬', trail = '·'}
 
 -- Always display the sign column. Prevents jumping
 vim.opt.signcolumn = 'yes'
+
+-- Display the autocomplete menu
+vim.opt.completeopt = {'menuone', 'popup', 'noinsert', 'noselect'}
+-- The filetype specific (omni) menu should be the default, and we should display the local buffer autocomplete
+vim.opt.complete = {'o', '.'}
+vim.opt.autocompletedelay = 1000
+vim.opt.autocomplete = true
