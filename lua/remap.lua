@@ -6,6 +6,15 @@ vim.g.mapleader = ' '
 
 local wk = require('which-key')
 
+-- Windows
+
+wk.add {
+  { '<C-l>', '<C-w>l', desc = "Jump to the Right Window"},
+  { '<C-h>', '<C-w>h', desc = "Jump to the Left Window"},
+}
+
+-- Files
+
 wk.add {
   { '<leader>w', vim.cmd.write, desc = 'Save File' },
   { '<leader>e', function() MiniFiles.open(vim.api.nvim_buf_get_name(0)) end, desc = 'Show File Picker'},
