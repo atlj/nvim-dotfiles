@@ -72,7 +72,7 @@ wk.add {
   { '<leader>b', gitsigns.blame_line, desc = "Git blame current line" }
 }
 
---- Harpoon
+-- Harpoon
 
 local harpoon = require("harpoon")
 
@@ -86,4 +86,10 @@ wk.add {
     { "<C-s>", function() harpoon:list():prev() end, desc = "First Harpooned File"},
     { "<C-f>", function() harpoon:list():prev() end, desc = "Last Harpooned File"},
   }
+}
+
+-- DiffView
+wk.add {
+  { '<leader>m', vim.cmd.DiffviewOpen, desc = "Show the Current Git Diff" },
+  { '<C-g>', function() vim.cmd.DiffviewOpen('main...HEAD') end, desc = "Show the Current Git Diff" },
 }

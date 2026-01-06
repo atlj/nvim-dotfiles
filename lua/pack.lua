@@ -50,6 +50,9 @@ vim.pack.add(
     -- Inline signature help
     g('ray-x/lsp_signature.nvim'),
 
+    -- Diff Viewer, makes code reviews easier
+    g('sindrets/diffview.nvim'),
+
     -- ColorScheme
     g('Yazeed1s/oh-lucy.nvim'),
 
@@ -68,4 +71,4 @@ vim.pack.add(
     -- Don't ask for confirmation
     confirm = false
   }
-) 
+)
