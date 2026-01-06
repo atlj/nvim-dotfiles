@@ -47,6 +47,9 @@ vim.pack.add(
     -- Inline diagnostics
     g('rachartier/tiny-inline-diagnostic.nvim'),
 
+    -- Inline signature help
+    g('ray-x/lsp_signature.nvim'),
+
     -- ColorScheme
     g('Yazeed1s/oh-lucy.nvim'),
 

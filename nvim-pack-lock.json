@@ -21,6 +21,10 @@
       "rev": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d",
       "src": "https://github.com/folke/lazydev.nvim"
     },
+    "lsp_signature.nvim": {
+      "rev": "7d3bb0a641f516f1c7fd2e47852580dadbd7a430",
+      "src": "https://github.com/ray-x/lsp_signature.nvim"
+    },
     "mason-lspconfig.nvim": {
       "rev": "4cfe411526a7a99c18281135e8b4765ae6330d15",
       "src": "https://github.com/mason-org/mason-lspconfig.nvim"
