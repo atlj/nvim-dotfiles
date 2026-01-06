@@ -33,6 +33,14 @@ vim.pack.add(
 
     -- Git blame
     g('lewis6991/gitsigns.nvim'),
+
+    -- LSP
+    -- Premade LSP configurations
+    g('neovim/nvim-lspconfig'),
+    -- A way to install LSP servers
+    g('mason-org/mason.nvim'),
+    -- Bridge between those two
+    g('mason-org/mason-lspconfig.nvim'),
   },
   {
     -- Don't ask for confirmation

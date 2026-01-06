@@ -8,9 +8,11 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Harpoon
-- LSPs without any third party dependencies
+- LSP autocomplete
+- LSP keys
 - Document the nvim version here.
+- Harpoon
+- Automate treesitter downloads
 
 ## Installation
 

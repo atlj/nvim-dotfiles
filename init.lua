@@ -10,6 +10,7 @@ end
 
 vim.api.nvim_create_user_command('ReloadConfig', ReloadConfig, {})
 
-require("pack")
-require("set")
-require("remap")
+require('pack')
+require('set')
+require('remap')
+require('lsp')
