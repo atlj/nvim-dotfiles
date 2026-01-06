@@ -56,3 +56,6 @@ vim.opt.completeopt = {'menuone', 'popup', 'noinsert', 'noselect'}
 vim.opt.complete = {'o', '.'}
 vim.opt.autocompletedelay = 1000
 vim.opt.autocomplete = true
+
+-- Set the colorscheme
+vim.cmd.colorscheme('oh-lucy-evening')

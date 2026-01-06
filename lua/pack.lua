@@ -42,7 +42,10 @@ vim.pack.add(
     -- Bridge between those two
     g('mason-org/mason-lspconfig.nvim'),
     -- Typed vim api
-    g('folke/lazydev.nvim')
+    g('folke/lazydev.nvim'),
+
+    -- ColorScheme
+    g('Yazeed1s/oh-lucy.nvim'),
   },
   {
     -- Don't ask for confirmation

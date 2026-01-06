@@ -8,7 +8,6 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- LSP autocomplete
 - LSP keys
 - Document the nvim version here.
 - Harpoon
