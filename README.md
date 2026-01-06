@@ -8,16 +8,14 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Format on save
+- surround
+- Autoimport the autocompleted item
+- Make sure enter doesn't get interrupted by completion menu
 - Document the nvim version here.
 - Automate treesitter downloads
-- eslint
 - diffview
 - get ts-comments working.
-- Make sure enter doesn't get interrupted by completion menu
-- Autoimport the autocompleted item
 - Incremental selection with `,`
-- surround
 
 ## Installation
 

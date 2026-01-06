@@ -59,13 +59,13 @@ vim.pack.add(
     -- A better UI Picker
     g('stevearc/dressing.nvim'),
 
-    -- Start of Depends on Plenary
+    -- >> Start of Depends on Plenary
     g('nvim-lua/plenary.nvim'),
     -- A better TypeScript LSP
     g('pmizio/typescript-tools.nvim'),
     -- A tool to save buffers per project
     { src = g('ThePrimeagen/harpoon'), version = "harpoon2" }
-    -- End of Depends on Plenary
+    -- << End of Depends on Plenary
   },
   {
     -- Don't ask for confirmation

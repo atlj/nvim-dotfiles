@@ -23,7 +23,9 @@ require('mason').setup()
 require("mason-lspconfig").setup({
   -- Make sure the following servers are installed
   ensure_installed = {
-    "lua_ls"
+    "lua_ls",
+    "rust_analyzer",
+    "eslint",
   }
 })
 
@@ -31,7 +33,7 @@ local did_load_lazydev = false
 -- Setup vim api LSP when you enter a lua file
 vim.api.nvim_create_autocmd({'BufNew'}, {
   pattern = {'*.lua'},
-  callback = function(ev)
+  callback = function()
     if did_load_lazydev then
       return
     end
