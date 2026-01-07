@@ -8,14 +8,17 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Autoimport the autocompleted item
-- Make sure enter doesn't get interrupted by completion menu
-- Document the nvim version here.
+- Configure `coq`:
+    - `<C-n>` should apply
+    - Ability to go through the preview
+    - Unbind the native menu
 - Automate treesitter downloads
-- diffview
 - get ts-comments working.
 - Incremental selection with `,`
-- A cool landing page
+- A cool landing page (use the one from mini)
+- Get inline highlights working
+- Get pack hooks working
+- Document the nvim version here.
 
 ## Installation
 

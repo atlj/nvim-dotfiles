@@ -7,6 +7,10 @@ local function hooks(ev)
   if name == 'nvim-treesitter' and (kind == 'install' or kind == 'update') then
     vim.cmd.TSUpdate()
   end
+
+  if name == 'coq' and (kind == 'install' or kind == 'update') then
+    vim.cmd.COQdeps()
+  end
 end
 vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
 
@@ -58,6 +62,9 @@ vim.pack.add(
 
     -- A better UI Picker
     g('stevearc/dressing.nvim'),
+
+    -- Better autocomplete menu
+    g('ms-jpq/coq_nvim'),
 
     -- >> Start of Depends on Plenary
     g('nvim-lua/plenary.nvim'),

@@ -1,19 +1,19 @@
 -- :h vim.diagnostic
 vim.diagnostic.config({
-    signs = {
-        -- Don't display signs for warnings and errors
-        text = {
-            [vim.diagnostic.severity.ERROR] = '',
-            [vim.diagnostic.severity.WARN] = '',
-        },
-        numhl = {
-            -- Highlight the line number for warnings and errors
-            [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
-            [vim.diagnostic.severity.WARN] = 'WarningMsg',
-        },
+  signs = {
+    -- Don't display signs for warnings and errors
+    text = {
+      [vim.diagnostic.severity.ERROR] = '',
+      [vim.diagnostic.severity.WARN] = '',
     },
-    -- Don't display an underline for lsp problems
-    underline = false
+    numhl = {
+      -- Highlight the line number for warnings and errors
+      [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+      [vim.diagnostic.severity.WARN] = 'WarningMsg',
+    },
+  },
+  -- Don't display an underline for lsp problems
+  underline = false
 })
 
 -- 1. Setup Mason
@@ -26,13 +26,13 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "rust_analyzer",
     "eslint",
-  }
+  },
 })
 
 local did_load_lazydev = false
 -- Setup vim api LSP when you enter a lua file
-vim.api.nvim_create_autocmd({'BufNew'}, {
-  pattern = {'*.lua'},
+vim.api.nvim_create_autocmd({ 'BufNew' }, {
+  pattern = { '*.lua' },
   callback = function()
     if did_load_lazydev then
       return
