@@ -8,10 +8,6 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Configure `coq`:
-    - `<C-n>` should apply
-    - Ability to go through the preview
-    - Unbind the native menu
 - Automate treesitter downloads
 - get ts-comments working.
 - Incremental selection with `,`
