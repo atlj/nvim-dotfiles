@@ -41,6 +41,10 @@
       "rev": "57e5a8addb8c71fb063ee4acda466c7cf6ad2800",
       "src": "https://github.com/mason-org/mason.nvim"
     },
+    "melange-nvim": {
+      "rev": "ce42f6b629beeaa00591ba73a77d3eeac4cf28ce",
+      "src": "https://github.com/savq/melange-nvim"
+    },
     "mini.nvim": {
       "rev": "5d8d141cb113e9d235c9215475b26b0d20612150",
       "src": "https://github.com/nvim-mini/mini.nvim"
@@ -60,10 +64,6 @@
     "nvim-web-devicons": {
       "rev": "6788013bb9cb784e606ada44206b0e755e4323d7",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
-    },
-    "oh-lucy.nvim": {
-      "rev": "2d94e9b03efe4c50f4653b6f2b7b200d970fe1aa",
-      "src": "https://github.com/Yazeed1s/oh-lucy.nvim"
     },
     "plenary.nvim": {
       "rev": "b9fd5226c2f76c951fc8ed5923d85e4de065e509",

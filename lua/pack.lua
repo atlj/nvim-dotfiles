@@ -58,7 +58,7 @@ vim.pack.add(
     g('sindrets/diffview.nvim'),
 
     -- ColorScheme
-    g('Yazeed1s/oh-lucy.nvim'),
+    g('savq/melange-nvim'),
 
     -- A better UI Picker
     g('stevearc/dressing.nvim'),
