@@ -15,6 +15,7 @@ The idea is:
 - Get inline highlights working
 - Get pack hooks working
 - Document the nvim version here.
+- Snippets
 
 ## Installation
 

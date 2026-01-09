@@ -1,5 +1,10 @@
 {
   "plugins": {
+    "blink.cmp": {
+      "rev": "b19413d214068f316c78978b08264ed1c41830ec",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": "'v1.8.0'"
+    },
     "coq_nvim": {
       "rev": "d939a34ceb2b57d2937890337a4aa75eb55e18a8",
       "src": "https://github.com/ms-jpq/coq_nvim"

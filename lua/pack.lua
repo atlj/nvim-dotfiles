@@ -48,11 +48,14 @@ vim.pack.add(
     -- Typed vim api
     g('folke/lazydev.nvim'),
 
+    -- Autocomplete menu
+    {
+      src = g('saghen/blink.cmp'),
+      version = 'v1.8.0'
+    },
+
     -- Inline diagnostics
     g('rachartier/tiny-inline-diagnostic.nvim'),
-
-    -- Inline signature help
-    g('ray-x/lsp_signature.nvim'),
 
     -- Diff Viewer, makes code reviews easier
     g('sindrets/diffview.nvim'),
@@ -63,15 +66,12 @@ vim.pack.add(
     -- A better UI Picker
     g('stevearc/dressing.nvim'),
 
-    -- Better autocomplete menu
-    g('ms-jpq/coq_nvim'),
-
     -- >> Start of Depends on Plenary
     g('nvim-lua/plenary.nvim'),
     -- A better TypeScript LSP
     g('pmizio/typescript-tools.nvim'),
     -- A tool to save buffers per project
-    { src = g('ThePrimeagen/harpoon'), version = "harpoon2" }
+    { src = g('ThePrimeagen/harpoon'), version = "harpoon2" },
     -- << End of Depends on Plenary
   },
   {
