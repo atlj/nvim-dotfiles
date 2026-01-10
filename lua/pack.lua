@@ -30,7 +30,7 @@ vim.pack.add(
     g('windwp/nvim-autopairs'),
 
     -- Syntax highlighting
-    g('nvim-treesitter/nvim-treesitter'),
+    { src = g('nvim-treesitter/nvim-treesitter'), version = 'master' },
 
     -- Floating terminals. Useful for lazygit.
     g('akinsho/toggleterm.nvim'),
@@ -53,6 +53,9 @@ vim.pack.add(
       src = g('saghen/blink.cmp'),
       version = 'v1.8.0'
     },
+
+    -- Commenting on jsx doesn't break the file
+    g('folke/ts-comments.nvim'),
 
     -- Inline diagnostics
     g('rachartier/tiny-inline-diagnostic.nvim'),

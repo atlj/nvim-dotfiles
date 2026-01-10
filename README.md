@@ -8,13 +8,10 @@ The idea is:
 1. Everything should be documented.
 
 ## TODO:
-- Automate treesitter downloads
-- get ts-comments working.
-- Incremental selection with `,`
-- A cool landing page (use the one from mini)
-- Get inline highlights working
 - Get pack hooks working
+- A cool landing page (use the one from mini)
 - Document the nvim version here.
+- Make sure every single line is documented
 - Snippets
 
 ## Installation

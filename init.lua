@@ -1,5 +1,5 @@
 function ReloadConfig()
-  for name,_ in pairs(package.loaded) do
+  for name, _ in pairs(package.loaded) do
     if name:match('^cnull') then
       package.loaded[name] = nil
     end
@@ -14,4 +14,5 @@ require('pack')
 require('set')
 require('remap')
 require('lsp')
+require('filetype')
 require('autocmd')

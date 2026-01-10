@@ -5,6 +5,6 @@ vim.filetype.add {
   extension = {
     podspec = "ruby",
     m = "objective-c",
-    wgsl = "wgsl"
+    wgsl = "wgsl",
   }
 }
