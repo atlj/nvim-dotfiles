@@ -1,18 +1,7 @@
+-- Third party packages
+
+--- GH helper
 local function g(x) return 'https://github.com/' .. x end
-
-local function hooks(ev)
-  local name, kind = ev.data.spec.name, ev.data.kind
-
-  -- Build treesitter
-  if name == 'nvim-treesitter' and (kind == 'install' or kind == 'update') then
-    vim.cmd.TSUpdate()
-  end
-
-  if name == 'coq' and (kind == 'install' or kind == 'update') then
-    vim.cmd.COQdeps()
-  end
-end
-vim.api.nvim_create_autocmd('PackChanged', { callback = hooks })
 
 vim.pack.add(
   {
@@ -30,7 +19,10 @@ vim.pack.add(
     g('windwp/nvim-autopairs'),
 
     -- Syntax highlighting
-    { src = g('nvim-treesitter/nvim-treesitter'), version = 'master' },
+    {
+      src = g('nvim-treesitter/nvim-treesitter'),
+      version = 'master'
+    },
 
     -- Floating terminals. Useful for lazygit.
     g('akinsho/toggleterm.nvim'),
@@ -74,7 +66,10 @@ vim.pack.add(
     -- A better TypeScript LSP
     g('pmizio/typescript-tools.nvim'),
     -- A tool to save buffers per project
-    { src = g('ThePrimeagen/harpoon'), version = "harpoon2" },
+    {
+      src = g('ThePrimeagen/harpoon'),
+      version = "harpoon2"
+    },
     -- << End of Depends on Plenary
   },
   {

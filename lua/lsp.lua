@@ -29,8 +29,9 @@ require("mason-lspconfig").setup({
   },
 })
 
-local did_load_lazydev = false
 -- Setup vim api LSP when you enter a lua file
+
+local did_load_lazydev = false
 vim.api.nvim_create_autocmd({ 'BufNew' }, {
   pattern = { '*.lua' },
   callback = function()
