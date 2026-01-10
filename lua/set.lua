@@ -34,14 +34,8 @@ vim.opt.scrolloff = 8
 -- Sync the system clipboard with yank buffer
 vim.opt.clipboard = 'unnamedplus'
 
--- Don't show the last command
-vim.opt.cmdheight = 0
-
 -- 24-bit RGB colors
 vim.opt.termguicolors = true
-
--- Never display error messages
-vim.o.messagesopt = 'wait:0,history:500'
 
 -- Display whitespaces
 vim.opt.list = true
