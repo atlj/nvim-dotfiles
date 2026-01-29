@@ -26,6 +26,8 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "rust_analyzer",
     "eslint", -- JS
+    "biome",  -- JS linter and formatter
+    "taplo",  -- TOML linter
   },
 })
 
