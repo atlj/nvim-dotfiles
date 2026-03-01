@@ -90,10 +90,10 @@ wk.add {
   { '<leader>h', function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, desc = "Toggle the Harpoon Menu" },
   {
     mode = "n",
-    { "<S-h>", function() harpoon:list():prev() end, desc = "Previous Harpooned File" },
-    { "<S-l>", function() harpoon:list():prev() end, desc = "Next Harpooned File" },
-    { "<C-s>", function() harpoon:list():prev() end, desc = "First Harpooned File" },
-    { "<C-f>", function() harpoon:list():prev() end, desc = "Last Harpooned File" },
+    { "<S-h>", function() harpoon:list():prev() end,                          desc = "Previous Harpooned File" },
+    { "<S-l>", function() harpoon:list():next() end,                          desc = "Next Harpooned File" },
+    { "<C-s>", function() harpoon:list():select(1) end,                       desc = "First Harpooned File" },
+    { "<C-f>", function() harpoon:list():select(harpoon:list():length()) end, desc = "Last Harpooned File" },
   }
 }
 
