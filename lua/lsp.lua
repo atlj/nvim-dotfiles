@@ -31,6 +31,11 @@ require("mason-lspconfig").setup({
   },
 })
 
+-- 3. Setup lsp servers that don't exist in Mason
+vim.lsp.enable({
+  "gdscript" -- Godot
+})
+
 -- Setup vim api LSP when you enter a lua file
 
 local did_load_lazydev = false
