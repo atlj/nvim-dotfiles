@@ -83,6 +83,10 @@
       "rev": "9a88eae817ef395952e08650b3283726786fb5fb",
       "src": "https://github.com/akinsho/toggleterm.nvim"
     },
+    "token": {
+      "rev": "f9bc4a8a2b971c95cc1d36d6960e28468b7dc3c9",
+      "src": "https://github.com/ThorstenRhau/token"
+    },
     "ts-comments.nvim": {
       "rev": "123a9fb12e7229342f807ec9e6de478b1102b041",
       "src": "https://github.com/folke/ts-comments.nvim"

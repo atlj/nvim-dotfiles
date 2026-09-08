@@ -50,4 +50,4 @@ vim.opt.completeopt = { 'menuone', 'popup', 'noinsert', 'noselect', 'fuzzy' }
 vim.opt.complete = { 'o', '.' }
 
 -- Set the colorscheme
-vim.cmd.colorscheme('melange')
+vim.cmd.colorscheme('token')

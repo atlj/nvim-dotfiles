@@ -57,6 +57,7 @@ vim.pack.add(
 
     -- ColorScheme
     g('savq/melange-nvim'),
+    g('ThorstenRhau/token'),
 
     -- A better UI Picker
     g('stevearc/dressing.nvim'),
