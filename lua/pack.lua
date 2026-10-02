@@ -1,7 +1,9 @@
 -- Third party packages
 
 --- GH helper
-local function g(x) return 'https://github.com/' .. x end
+--- @param github_address string path to the repository
+--- @return string hey
+local function g(github_address) return 'https://github.com/' .. github_address end
 
 vim.pack.add(
   {
@@ -19,10 +21,7 @@ vim.pack.add(
     g('windwp/nvim-autopairs'),
 
     -- Syntax highlighting
-    {
-      src = g('nvim-treesitter/nvim-treesitter'),
-      version = 'master'
-    },
+    g('nvim-treesitter/nvim-treesitter'),
 
     -- Floating terminals. Useful for lazygit.
     g('akinsho/toggleterm.nvim'),

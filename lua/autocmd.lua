@@ -1,5 +1,5 @@
 -- Format on save
-vim.api.nvim_create_autocmd({'BufWrite'}, {
+vim.api.nvim_create_autocmd({ 'BufWrite' }, {
   callback = function()
     -- Eslint is special...
     if vim.fn.exists ':LspEslintFixAll' == 2 then
@@ -8,5 +8,16 @@ vim.api.nvim_create_autocmd({'BufWrite'}, {
     else
       vim.lsp.buf.format()
     end
+  end
+})
+
+-- automatically install treesitter language support
+local nvim_treesitter = require('nvim-treesitter')
+vim.api.nvim_create_autocmd({ 'FileType' }, {
+  callback = function(args)
+    local filetype = args.match
+    local lang = vim.treesitter.language.get_lang(filetype)
+
+    nvim_treesitter.install(lang)
   end
 })
